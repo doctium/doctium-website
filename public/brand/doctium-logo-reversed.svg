@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="263" height="263" viewBox="0 0 263 263" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Doctium Logo</title>
+  <desc id="desc">Doctium symbol built from a clinical cross-like H form and a bold D-shaped arc.</desc>
+  
+  <path d="M38 66H80V112H125V156H80V201H38V66Z" fill="#F3F6FA"/>
+  <path d="M126 23C187.3 23 237 72.5 237 134C237 195.5 187.3 244 126 244V200C163.5 200 193 170.6 193 134C193 97.4 163.5 67 126 67V23Z" fill="#7DB7F5"/>
+</svg>

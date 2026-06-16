@@ -1,0 +1,100 @@
+export const siteConfig = {
+  name: "Doctium",
+  domain: "doctiumhealth.com",
+  url: "https://doctiumhealth.com",
+  slogan: "An AI-native hospital operating system for African healthcare.",
+  shortDescription:
+    "Doctium is an AI-native hospital operating system for African healthcare — a hospital EHR and a telemedicine marketplace, with ambient clinical documentation and personalized medicine built in.",
+  // External destinations
+  links: {
+    dashboard: "https://dashboard.doctiumhealth.com",
+    api: "https://api.doctiumhealth.com",
+    appStore: "#", // TODO: replace with App Store URL
+    playStore: "#", // TODO: replace with Play Store URL
+    demo: "/contact",
+    email: "hello@doctiumhealth.com",
+  },
+  social: {
+    linkedin: "#",
+    x: "#",
+    instagram: "#",
+  },
+} as const;
+
+export type NavLink = { label: string; href: string; desc?: string };
+export type NavGroup = { label: string; links: NavLink[] };
+
+/** Header mega-menu. */
+export const navGroups: NavGroup[] = [
+  {
+    label: "Hospitals",
+    links: [
+      {
+        label: "The Hospital OS",
+        href: "/ehr",
+        desc: "AI-native EHR — clinical, financial & operational workflows",
+      },
+      {
+        label: "Doctium Scribe",
+        href: "/scribe",
+        desc: "Ambient AI clinical documentation, doctor-reviewed",
+      },
+      {
+        label: "Personalized Medicine",
+        href: "/personalized-medicine",
+        desc: "n-of-1 care, starting with sickle cell disease",
+      },
+    ],
+  },
+  {
+    label: "Patients",
+    links: [
+      {
+        label: "Telemedicine",
+        href: "/telemedicine",
+        desc: "See a verified doctor in minutes — chat, voice & video",
+      },
+      {
+        label: "Download the app",
+        href: "/telemedicine#download",
+        desc: "Doctium for iOS & Android",
+      },
+    ],
+  },
+  {
+    label: "Company",
+    links: [
+      { label: "About", href: "/about", desc: "The AI-native OS thesis & mission" },
+      { label: "Contact", href: "/contact", desc: "Book a demo or talk to our team" },
+    ],
+  },
+];
+
+export const footerNav: NavGroup[] = [
+  {
+    label: "For Hospitals",
+    links: [
+      { label: "The Hospital OS", href: "/ehr" },
+      { label: "Doctium Scribe", href: "/scribe" },
+      { label: "Personalized Medicine", href: "/personalized-medicine" },
+      { label: "Book a demo", href: "/contact" },
+    ],
+  },
+  {
+    label: "For Patients",
+    links: [
+      { label: "Telemedicine", href: "/telemedicine" },
+      { label: "Download the app", href: "/telemedicine#download" },
+      { label: "Sign in", href: siteConfig.links.dashboard },
+    ],
+  },
+  {
+    label: "Company",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Contact", href: "/contact" },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
+    ],
+  },
+];
