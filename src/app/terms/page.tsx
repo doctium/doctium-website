@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import { LegalLayout } from "@/components/sections/LegalLayout";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Terms of Service",
   description:
     "The terms that govern access to and use of the Doctium platform, including the hospital operating system and the telemedicine marketplace.",
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

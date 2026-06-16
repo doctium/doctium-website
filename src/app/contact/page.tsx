@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { Mail, LogIn, Server, ArrowUpRight, ShieldCheck, Globe } from "lucide-react";
 import { ContactHero } from "@/components/sections/contact/ContactHero";
@@ -11,11 +11,12 @@ import { Reveal } from "@/components/motion/Reveal";
 import { CTASection } from "@/components/sections/CTASection";
 import { siteConfig } from "@/content/site";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Contact",
   description:
     "Book a demo of the Doctium Hospital OS, talk to our team, or get support for the Doctium app.",
-};
+  path: "/contact",
+});
 
 const reachLinks = [
   {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { PMHero } from "@/components/sections/personalized-medicine/PMHero";
 import { WhySickleCell } from "@/components/sections/personalized-medicine/WhySickleCell";
 import { Capabilities } from "@/components/sections/personalized-medicine/Capabilities";
@@ -8,11 +8,12 @@ import { BothArms } from "@/components/sections/personalized-medicine/BothArms";
 import { SafetyStance } from "@/components/sections/personalized-medicine/SafetyStance";
 import { CTASection } from "@/components/sections/CTASection";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Personalized Medicine",
   description:
     "Doctium's personalized-medicine agents use structured patient data, diagnostics and genetics to guide patient-specific decisions — starting with sickle cell disease, where personalization genuinely changes the treatment.",
-};
+  path: "/personalized-medicine",
+});
 
 export default function PersonalizedMedicinePage() {
   return (

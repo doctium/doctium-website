@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import { LegalLayout } from "@/components/sections/LegalLayout";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Privacy Policy",
   description:
     "How Doctium collects, uses, protects and shares personal and health information across the Doctium platform.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

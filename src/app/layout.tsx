@@ -5,6 +5,7 @@ import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/content/site";
+import { organizationJsonLd, websiteJsonLd, jsonLdScript } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -64,26 +65,19 @@ export const metadata: Metadata = {
     ],
     apple: "/icon.png",
   },
-  alternates: { canonical: siteConfig.url },
-  robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
 };
 
 export const viewport: Viewport = {
   themeColor: "#0b1424",
   width: "device-width",
   initialScale: 1,
-};
-
-const orgJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Doctium",
-  url: siteConfig.url,
-  logo: `${siteConfig.url}/brand/doctium-logo-2048.png`,
-  description: siteConfig.shortDescription,
-  slogan: siteConfig.slogan,
-  areaServed: "Africa",
-  email: siteConfig.links.email,
 };
 
 export default function RootLayout({
@@ -94,7 +88,11 @@ export default function RootLayout({
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+          dangerouslySetInnerHTML={jsonLdScript(organizationJsonLd)}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript(websiteJsonLd)}
         />
         <SmoothScroll>
           <Header />

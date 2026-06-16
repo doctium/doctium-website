@@ -6,12 +6,14 @@ import { ForDoctors } from "@/components/sections/telemedicine/ForDoctors";
 import { Trust } from "@/components/sections/telemedicine/Trust";
 import { Download } from "@/components/sections/telemedicine/Download";
 import { CTASection } from "@/components/sections/CTASection";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "Telemedicine",
   description:
     "Doctium's telemedicine marketplace connects patients to identity-verified doctors in minutes — AI triage, secure chat/voice/video, signed e-prescriptions, chronic-care programs, in five languages.",
-};
+  path: "/telemedicine",
+});
 
 export default function TelemedicinePage() {
   return (

@@ -7,12 +7,14 @@ import { EhrAiBuiltIn } from "@/components/sections/ehr/EhrAiBuiltIn";
 import { EhrTrust } from "@/components/sections/ehr/EhrTrust";
 import { EhrAfrica } from "@/components/sections/ehr/EhrAfrica";
 import { CTASection } from "@/components/sections/CTASection";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMeta({
   title: "The Hospital OS",
   description:
     "Doctium is an AI-native hospital EHR — every clinical, financial and operational workflow becomes structured data that feeds intelligent loops. 14+ modules, doctor-in-the-loop AI, FHIR R4.",
-};
+  path: "/ehr",
+});
 
 export default function EhrPage() {
   return (

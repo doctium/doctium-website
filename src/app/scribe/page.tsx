@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { ScribeHero } from "@/components/sections/scribe/ScribeHero";
 import { ScribeProblem } from "@/components/sections/scribe/ScribeProblem";
 import { ScribeHowItWorks } from "@/components/sections/scribe/ScribeHowItWorks";
@@ -8,11 +8,12 @@ import { ScribeOutcomes } from "@/components/sections/scribe/ScribeOutcomes";
 import { ScribeSafety } from "@/components/sections/scribe/ScribeSafety";
 import { CTASection } from "@/components/sections/CTASection";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: "Doctium Scribe — AI clinical documentation",
   description:
     "Doctium Scribe is an ambient clinical documentation assistant built into the Doctium EHR. With patient consent it turns consultations into structured, reviewable notes — reviewed, edited and approved by the clinician.",
-};
+  path: "/scribe",
+});
 
 export default function ScribePage() {
   return (
