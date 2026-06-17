@@ -1,18 +1,5 @@
-export interface TeamMember {
-  name: string;
-  role: string;
-  bio?: string;
-  avatarUrl?: string; // e.g. "/team/ada.jpg" (drop photos in public/team/)
-  linkedinUrl?: string;
-}
-
-/**
- * Replace with the real Doctium team. Until populated, the /team page shows a
- * tasteful "profiles coming soon" state + the values below. Example shape:
- *   { name: "Ada Obi", role: "Founder & CEO", bio: "…", avatarUrl: "/team/ada.jpg", linkedinUrl: "https://linkedin.com/in/…" }
- */
-export const teamMembers: TeamMember[] = [];
-
+// Team members are managed in the admin panel (Website → Team Members) and
+// fetched from the CMS at runtime. These values stay static here.
 export const teamValues: { icon: string; title: string; desc: string }[] = [
   {
     icon: "UserCheck",

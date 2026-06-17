@@ -11,7 +11,8 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { Icon } from "@/components/ui/Icon";
 import { CTASection } from "@/components/sections/CTASection";
 import { pageMeta } from "@/lib/seo";
-import { teamMembers, teamValues } from "@/content/team";
+import { teamValues } from "@/content/team";
+import { getTeamMembers } from "@/lib/cms";
 
 export const metadata = pageMeta({
   title: "Team",
@@ -20,7 +21,8 @@ export const metadata = pageMeta({
   path: "/team",
 });
 
-export default function TeamPage() {
+export default async function TeamPage() {
+  const teamMembers = await getTeamMembers();
   return (
     <>
       {/* Hero */}
@@ -98,7 +100,7 @@ export default function TeamPage() {
                         <p className="text-sm text-trust-deep">{m.role}</p>
                       </div>
                     </div>
-                    {m.bio && <p className="mt-4 text-[0.92rem] leading-relaxed text-muted">{m.bio}</p>}
+                    {m.bioMd && <p className="mt-4 text-[0.92rem] leading-relaxed text-muted">{m.bioMd}</p>}
                     {m.linkedinUrl && (
                       <a
                         href={m.linkedinUrl}

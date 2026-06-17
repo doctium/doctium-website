@@ -7,7 +7,7 @@ import { NextRequest, NextResponse } from "next/server";
  *   POST /api/revalidate?secret=…   body: { "tag": "blog" | "news" | "jobs" | "landing" | "cms" }
  * Secret is checked against REVALIDATE_SECRET (set in the website's env).
  */
-const VALID_TAGS = new Set(["blog", "news", "jobs", "landing", "cms"]);
+const VALID_TAGS = new Set(["blog", "news", "jobs", "landing", "team", "cms"]);
 
 export async function POST(req: NextRequest) {
   const secret =

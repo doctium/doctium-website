@@ -134,6 +134,18 @@ export const getJobTeams = () => cms<Ref[]>("/jobs/teams", "jobs", []);
 export const getLanding = (slug: string) =>
   cms<LandingFull | null>(`/landing/${slug}`, "landing", null);
 
+export interface TeamMember {
+  name: string;
+  slug: string;
+  role: string;
+  bioMd: string;
+  avatarUrl: string;
+  linkedinUrl: string;
+  xUrl: string;
+  group: string;
+}
+export const getTeamMembers = () => cms<TeamMember[]>("/team", "team", []);
+
 export interface SitemapEntries {
   blog: { slug: string; updatedAt: string; publishedAt: string | null }[];
   news: { slug: string; updatedAt: string; publishedAt: string | null }[];
