@@ -65,7 +65,16 @@ export const navGroups: NavGroup[] = [
     label: "Company",
     links: [
       { label: "About", href: "/about", desc: "The AI-native OS thesis & mission" },
+      { label: "Team", href: "/team", desc: "The people building Doctium" },
+      { label: "Careers", href: "/careers", desc: "Open roles — build with us" },
       { label: "Contact", href: "/contact", desc: "Book a demo or talk to our team" },
+    ],
+  },
+  {
+    label: "Resources",
+    links: [
+      { label: "Blog", href: "/blog", desc: "Insights on AI-native healthcare" },
+      { label: "Newsroom", href: "/newsroom", desc: "Announcements & press" },
     ],
   },
 ];
@@ -92,7 +101,16 @@ export const footerNav: NavGroup[] = [
     label: "Company",
     links: [
       { label: "About", href: "/about" },
+      { label: "Team", href: "/team" },
+      { label: "Careers", href: "/careers" },
       { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    label: "Resources",
+    links: [
+      { label: "Blog", href: "/blog" },
+      { label: "Newsroom", href: "/newsroom" },
       { label: "Privacy", href: "/privacy" },
       { label: "Terms", href: "/terms" },
     ],

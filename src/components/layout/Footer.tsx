@@ -49,7 +49,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {footerNav.map((col) => (
               <div key={col.label}>
                 <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-sky">
