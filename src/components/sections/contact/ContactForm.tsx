@@ -28,8 +28,11 @@ export function ContactForm() {
   const [role, setRole] = useState("");
   const [selected, setSelected] = useState<string[]>([]);
   const [message, setMessage] = useState("");
+  const [website, setWebsite] = useState(""); // honeypot
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const toggleInterest = (i: string) =>
     setSelected((prev) =>
@@ -68,12 +71,37 @@ export function ContactForm() {
     return next;
   };
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (sending) return;
     const next = validate();
     setErrors(next);
     if (Object.keys(next).length > 0) return;
-    setSent(true);
+
+    setSending(true);
+    setFailed(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          organization: org,
+          role,
+          interests: selected,
+          message,
+          website, // honeypot
+        }),
+      });
+      const json = (await res.json().catch(() => ({}))) as { ok?: boolean };
+      if (res.ok && json.ok !== false) setSent(true);
+      else setFailed(true);
+    } catch {
+      setFailed(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) {
@@ -84,33 +112,24 @@ export function ContactForm() {
           <Check className="h-7 w-7 text-success" />
         </div>
         <h3 className="mt-5 font-display text-2xl font-bold text-navy">
-          Thanks{name ? `, ${name.split(" ")[0]}` : ""} — we&apos;ll be in touch.
+          Thanks{name ? `, ${name.split(" ")[0]}` : ""} — message received.
         </h3>
         <p className="mt-3 leading-relaxed text-muted">
-          We&apos;ve noted your interest{" "}
+          We&apos;ve logged your request{" "}
           {selected.length ? (
-            <span className="font-medium text-navy">in {selected.join(", ")}</span>
+            <span className="font-medium text-navy">({selected.join(", ")})</span>
           ) : null}{" "}
-          and will reply at{" "}
-          <span className="font-medium text-navy">{email || "your email"}</span>.
+          and a clinician-led team member will reply at{" "}
+          <span className="font-medium text-navy">{email}</span>, usually within two
+          business days.
         </p>
-        <div className="mt-6 rounded-2xl border border-trust/20 bg-trust-light/40 p-4">
-          <p className="text-[0.9rem] leading-relaxed text-navy">
-            <span className="font-semibold">No backend yet?</span> To make sure your
-            message reaches us right away, you can also send it straight from your
-            email client.
-          </p>
-          <div className="mt-4">
-            <Button
-              href={mailtoHref}
-              variant="primary"
-              size="md"
-              iconRight={<ArrowRight className="h-4 w-4" />}
-            >
-              Send via email
-            </Button>
-          </div>
-        </div>
+        <p className="mt-4 text-[0.85rem] text-muted">
+          Prefer email? Reach us any time at{" "}
+          <a href={`mailto:${siteConfig.links.email}`} className="font-medium text-trust-deep hover:underline">
+            {siteConfig.links.email}
+          </a>
+          .
+        </p>
       </div>
     );
   }
@@ -210,6 +229,20 @@ export function ContactForm() {
           </div>
         </div>
 
+        {/* Honeypot — hidden from humans; bots fill it and get silently dropped. */}
+        <div aria-hidden className="pointer-events-none absolute -left-[9999px] h-0 w-0 overflow-hidden">
+          <label htmlFor="cf-website">Leave this field empty</label>
+          <input
+            id="cf-website"
+            name="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={website}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
+
         {/* Interest pills */}
         <fieldset className="mt-6">
           <legend className={labelBase}>I&apos;m interested in</legend>
@@ -258,14 +291,31 @@ export function ContactForm() {
           )}
         </div>
 
+        {failed && (
+          <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-danger/25 bg-danger/5 p-4 sm:flex-row sm:items-center sm:justify-between">
+            <p className="flex items-start gap-2 text-[0.85rem] leading-snug text-navy">
+              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-danger" />
+              Something went wrong sending your message. Please try again, or email us
+              directly so nothing is lost.
+            </p>
+            <Button href={mailtoHref} variant="secondary" size="sm" iconLeft={<Mail className="h-4 w-4" />}>
+              Email us
+            </Button>
+          </div>
+        )}
+
         <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <Button type="submit" variant="primary" size="lg" iconRight={<ArrowRight className="h-4 w-4" />}>
-            Book a demo
+          <Button
+            type="submit"
+            variant="primary"
+            size="lg"
+            iconRight={<ArrowRight className="h-4 w-4" />}
+          >
+            {sending ? "Sending…" : "Book a demo"}
           </Button>
           <p className="flex items-start gap-1.5 text-[0.78rem] leading-snug text-muted sm:max-w-[16rem]">
             <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-trust" />
-            On submit we&apos;ll show a confirmation and offer to open your email
-            client so nothing is lost.
+            We reply from a real, clinician-led team — usually within two business days.
           </p>
         </div>
       </form>
