@@ -31,7 +31,7 @@ export default async function TeamPage() {
         <CursorSpotlight />
         <Container className="relative z-10 py-20 md:py-28">
           <Eyebrow tone="light">Our team</Eyebrow>
-          <h1 className="mt-5 max-w-4xl text-balance text-[clamp(2.3rem,5.5vw,4rem)] font-extrabold leading-[1.03] tracking-[-0.03em]">
+          <h1 className="mt-5 max-w-4xl text-balance text-[clamp(2.3rem,5.5vw,4rem)] font-extrabold leading-[1.03] tracking-[-0.03em] text-white">
             The people building the <span className="text-gradient">AI-native</span> hospital OS.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">

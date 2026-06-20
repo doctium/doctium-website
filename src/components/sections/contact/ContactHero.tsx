@@ -116,7 +116,7 @@ export function ContactHero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.08, ease: EASE_OUT }}
-            className="mt-6 text-balance text-[clamp(2.3rem,5.5vw,4rem)] font-extrabold leading-[1.03] tracking-[-0.03em]"
+            className="mt-6 text-balance text-[clamp(2.3rem,5.5vw,4rem)] font-extrabold leading-[1.03] tracking-[-0.03em] text-white"
           >
             Talk to the team building the{" "}
             <span className="text-gradient">AI-native</span> hospital OS.
