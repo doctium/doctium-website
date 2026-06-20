@@ -1,13 +1,12 @@
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Badge";
 import { AuroraBackground } from "@/components/motion/AuroraBackground";
-
-type Block = { heading: string; body: string[] };
+import type { LegalBlock } from "@/content/legal";
 
 /**
- * Shared layout for the simple legal stub pages (/privacy, /terms).
- * Dark hero (header legibility) + a clean prose column. The copy is a
- * placeholder template — replace with reviewed legal text before launch.
+ * Shared layout for the legal pages (/privacy, /terms). Dark hero (header
+ * legibility) + a clean prose column rendered from structured LegalBlock[]
+ * (h2 section headings + paragraphs), sourced from src/content/legal.ts.
  */
 export function LegalLayout({
   eyebrow,
@@ -20,7 +19,7 @@ export function LegalLayout({
   title: string;
   intro: string;
   updated: string;
-  blocks: Block[];
+  blocks: LegalBlock[];
 }) {
   return (
     <>
@@ -40,23 +39,21 @@ export function LegalLayout({
 
       <section className="bg-white py-16 md:py-24">
         <Container size="narrow">
-          <div className="rounded-2xl border border-warning/30 bg-warning/5 p-4 text-sm text-body">
-            <strong className="font-semibold text-navy">Template notice:</strong> This is a
-            placeholder document to be replaced with your organization&apos;s reviewed legal
-            text before launch.
-          </div>
-          <div className="mt-10 space-y-10">
-            {blocks.map((b) => (
-              <div key={b.heading}>
-                <h2 className="text-xl font-bold text-navy">{b.heading}</h2>
-                {b.body.map((p, i) => (
-                  <p key={i} className="mt-3 leading-relaxed text-muted">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            ))}
-          </div>
+          {blocks.map((b, i) =>
+            b.h === 1 ? (
+              <h2 key={i} className="mt-10 mb-3 text-2xl font-bold text-navy">
+                {b.text}
+              </h2>
+            ) : b.h === 2 ? (
+              <h2 key={i} className="mt-9 mb-2 text-xl font-bold text-navy first:mt-0">
+                {b.text}
+              </h2>
+            ) : (
+              <p key={i} className="mt-3 leading-relaxed text-muted">
+                {b.text}
+              </p>
+            ),
+          )}
         </Container>
       </section>
     </>

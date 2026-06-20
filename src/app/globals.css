@@ -193,7 +193,8 @@
 
 /* Gradient text — the recurring navy → trust → sky brand light */
 .text-gradient {
-  background: linear-gradient(100deg, #2f80ed 0%, #5fa8ff 42%, #8bbbe9 100%);
+  /* Sky-range stops only — stays high-contrast on the navy heroes (no blue-on-navy). */
+  background: linear-gradient(100deg, #5fa8ff 0%, #8bbbe9 50%, #c9e0f5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
