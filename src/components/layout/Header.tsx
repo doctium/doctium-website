@@ -136,6 +136,13 @@ export function Header() {
           >
             Sign in
           </Link>
+          <Button
+            href="/signup"
+            size="sm"
+            variant={dark ? "outlineLight" : "secondary"}
+          >
+            Get started
+          </Button>
           <Button href="/contact" size="sm" variant={dark ? "white" : "primary"}>
             Book a demo
           </Button>
@@ -205,7 +212,10 @@ export function Header() {
                 </motion.div>
               ))}
               <div className="mt-2 flex flex-col gap-3">
-                <Button href="/contact" variant="white" size="lg" className="w-full">
+                <Button href="/signup" variant="white" size="lg" className="w-full">
+                  Get started
+                </Button>
+                <Button href="/contact" variant="outlineLight" size="lg" className="w-full">
                   Book a demo
                 </Button>
                 <Button

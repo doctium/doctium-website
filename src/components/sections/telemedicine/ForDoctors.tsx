@@ -135,15 +135,15 @@ export function ForDoctors() {
             <Reveal delay={0.2}>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Button
-                  href={siteConfig.links.dashboard}
+                  href="/signup/doctor"
                   variant="primary"
                   size="lg"
                   iconRight={<ArrowRight className="h-4 w-4" />}
                 >
-                  Sign in to your dashboard
+                  Join as a doctor
                 </Button>
-                <Button href="/contact" variant="secondary" size="lg">
-                  Talk to our team
+                <Button href={siteConfig.links.dashboard} variant="secondary" size="lg">
+                  Sign in to your dashboard
                 </Button>
               </div>
             </Reveal>

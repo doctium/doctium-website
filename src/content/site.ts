@@ -9,8 +9,10 @@ export const siteConfig = {
   links: {
     dashboard: "https://dashboard.doctiumhealth.com",
     api: "https://api.doctiumhealth.com",
-    appStore: "#", // TODO: replace with App Store URL
-    playStore: "#", // TODO: replace with Play Store URL
+    signup: "/signup",
+    // TEMPORARY store links — swap for the real app listings once published.
+    appStore: "https://www.apple.com/app-store/",
+    playStore: "https://play.google.com/store/apps",
     demo: "/contact",
     email: "hello@doctiumhealth.com",
   },
@@ -55,6 +57,11 @@ export const navGroups: NavGroup[] = [
         desc: "See a verified doctor in minutes — chat, voice & video",
       },
       {
+        label: "Create an account",
+        href: "/signup/patient",
+        desc: "Sign up to see verified doctors",
+      },
+      {
         label: "Download the app",
         href: "/telemedicine#download",
         desc: "Doctium for iOS & Android",
@@ -93,6 +100,8 @@ export const footerNav: NavGroup[] = [
     label: "For Patients",
     links: [
       { label: "Telemedicine", href: "/telemedicine" },
+      { label: "Create an account", href: "/signup/patient" },
+      { label: "Join as a doctor", href: "/signup/doctor" },
       { label: "Download the app", href: "/telemedicine#download" },
       { label: "Sign in", href: siteConfig.links.dashboard },
     ],

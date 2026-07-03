@@ -1,7 +1,8 @@
-import { Bot, BadgeCheck, Star, Video, MessageCircle, Phone, PlayCircle, Check } from "lucide-react";
+import { Bot, BadgeCheck, Star, Video, MessageCircle, Phone, PlayCircle, Check, ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { DeviceFrame } from "@/components/ui/DeviceFrame";
 import { StoreBadges } from "@/components/ui/StoreBadges";
 import { Parallax } from "@/components/motion/Parallax";
@@ -127,8 +128,19 @@ export function Download() {
             </RevealGroup>
 
             <Reveal delay={0.2}>
-              <div className="mt-9 inline-flex rounded-2xl bg-navy-cinematic p-1.5">
-                <StoreBadges />
+              <div className="mt-9 flex flex-col gap-5">
+                <Button
+                  href="/signup/patient"
+                  variant="primary"
+                  size="lg"
+                  className="self-start"
+                  iconRight={<ArrowRight className="h-4 w-4" />}
+                >
+                  Create your account
+                </Button>
+                <div className="inline-flex self-start rounded-2xl bg-navy-cinematic p-1.5">
+                  <StoreBadges />
+                </div>
               </div>
             </Reveal>
           </div>
