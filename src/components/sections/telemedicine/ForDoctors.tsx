@@ -5,7 +5,6 @@ import { Eyebrow } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { Icon } from "@/components/ui/Icon";
-import { siteConfig } from "@/content/site";
 
 const doctorBenefits = [
   {
@@ -142,8 +141,8 @@ export function ForDoctors() {
                 >
                   Join as a doctor
                 </Button>
-                <Button href={siteConfig.links.dashboard} variant="secondary" size="lg">
-                  Sign in to your dashboard
+                <Button href="/contact" variant="secondary" size="lg">
+                  Talk to our team
                 </Button>
               </div>
             </Reveal>

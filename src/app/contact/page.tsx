@@ -1,6 +1,6 @@
 import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
-import { Mail, LogIn, Server, ArrowUpRight, ShieldCheck, Globe } from "lucide-react";
+import { Mail, UserPlus, Smartphone, MapPin, ArrowUpRight, ShieldCheck, Globe } from "lucide-react";
 import { ContactHero } from "@/components/sections/contact/ContactHero";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 import { Section } from "@/components/ui/Section";
@@ -27,18 +27,25 @@ const reachLinks = [
     note: "Hospitals & patients — a real human replies.",
   },
   {
-    icon: LogIn,
-    label: "Sign in",
-    value: "dashboard.doctiumhealth.com",
-    href: siteConfig.links.dashboard,
-    note: "Clinic & admin access to the Doctium platform.",
+    icon: UserPlus,
+    label: "Create an account",
+    value: "Sign up in minutes",
+    href: "/signup",
+    note: "Patients and doctors can sign up here, then use the app.",
   },
   {
-    icon: Server,
-    label: "Developers",
-    value: "api.doctiumhealth.com",
-    href: siteConfig.links.api,
-    note: "The Doctium API.",
+    icon: Smartphone,
+    label: "Get the app",
+    value: "iOS & Android",
+    href: "/telemedicine#download",
+    note: "See a verified doctor from your phone.",
+  },
+  {
+    icon: MapPin,
+    label: "Visit us",
+    value: siteConfig.address.full,
+    href: siteConfig.address.maps,
+    note: "Doctium HQ — Zaria, Kaduna State.",
   },
 ];
 

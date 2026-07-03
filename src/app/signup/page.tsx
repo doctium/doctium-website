@@ -5,7 +5,6 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AuroraBackground } from "@/components/motion/AuroraBackground";
-import { siteConfig } from "@/content/site";
 
 export const metadata = pageMeta({
   title: "Sign up",
@@ -76,12 +75,12 @@ export default function SignupPage() {
 
           <p className="mt-8 text-center text-[0.9rem] text-muted">
             Already have an account?{" "}
-            <a
-              href={siteConfig.links.dashboard}
+            <Link
+              href="/telemedicine#download"
               className="font-medium text-trust-deep hover:underline"
             >
-              Sign in
-            </a>
+              Get the app to sign in
+            </Link>
           </p>
         </Container>
       </Section>

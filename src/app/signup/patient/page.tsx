@@ -6,7 +6,6 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AuroraBackground } from "@/components/motion/AuroraBackground";
 import { PatientSignupForm } from "@/components/sections/signup/PatientSignupForm";
-import { siteConfig } from "@/content/site";
 
 export const metadata = pageMeta({
   title: "Create your patient account",
@@ -73,12 +72,12 @@ export default function PatientSignupPage() {
               <PatientSignupForm />
               <p className="mt-5 text-center text-[0.9rem] text-muted">
                 Already have an account?{" "}
-                <a
-                  href={siteConfig.links.dashboard}
+                <Link
+                  href="/telemedicine#download"
                   className="font-medium text-trust-deep hover:underline"
                 >
-                  Sign in
-                </a>
+                  Get the app to sign in
+                </Link>
               </p>
             </div>
           </div>

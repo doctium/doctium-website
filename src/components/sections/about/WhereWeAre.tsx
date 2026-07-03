@@ -1,4 +1,4 @@
-import { Server, MonitorSmartphone, Smartphone, Boxes } from "lucide-react";
+import { Stethoscope, FileText, Smartphone, Boxes } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -7,18 +7,11 @@ import { StoreBadges } from "@/components/ui/StoreBadges";
 
 const status = [
   {
-    icon: Server,
+    icon: Stethoscope,
     state: "Live",
-    title: "Platform API",
-    desc: "The core API is live in production.",
-    detail: "api.doctiumhealth.com",
-  },
-  {
-    icon: MonitorSmartphone,
-    state: "Live",
-    title: "Admin & clinic dashboard",
-    desc: "Hospital and clinic teams sign in to run their workflows.",
-    detail: "dashboard.doctiumhealth.com",
+    title: "Telemedicine marketplace",
+    desc: "Patients see verified doctors by chat, voice and video, and manage their care.",
+    detail: "Live now",
   },
   {
     icon: Smartphone,
@@ -28,10 +21,17 @@ const status = [
     detail: "iOS · Android",
   },
   {
+    icon: FileText,
+    state: "Shipping",
+    title: "Doctium Scribe",
+    desc: "Ambient AI clinical documentation that turns consultations into reviewable notes.",
+    detail: "Doctor-reviewed",
+  },
+  {
     icon: Boxes,
     state: "Rolling out",
     title: "Hospital EHR",
-    desc: "The Hospital OS is rolling out module by module, with more shipping continuously.",
+    desc: "The AI-native Hospital OS is rolling out module by module, with more shipping continuously.",
     detail: "Module by module",
   },
 ];

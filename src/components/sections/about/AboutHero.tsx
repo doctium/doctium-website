@@ -86,8 +86,8 @@ function StatusCard() {
       </span>
       <div className="mt-3 space-y-2">
         {[
-          ["API", "api.doctiumhealth.com"],
-          ["Clinic", "dashboard.doctiumhealth.com"],
+          ["Telemedicine", "Live now"],
+          ["Patient apps", "iOS · Android"],
         ].map(([k, v]) => (
           <div key={k} className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-success" />

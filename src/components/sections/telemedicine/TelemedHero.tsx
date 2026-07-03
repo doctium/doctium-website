@@ -148,11 +148,11 @@ export function TelemedHero() {
           >
             <StoreBadges />
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button href="#how" variant="outlineLight" size="lg" iconRight={<ArrowRight className="h-4 w-4" />}>
-                How it works
+              <Button href="/signup/patient" variant="outlineLight" size="lg" iconRight={<ArrowRight className="h-4 w-4" />}>
+                Create an account
               </Button>
-              <Button href={"https://dashboard.doctiumhealth.com"} variant="outlineLight" size="lg">
-                Sign in to dashboard
+              <Button href="#how" variant="outlineLight" size="lg">
+                How it works
               </Button>
             </div>
           </motion.div>

@@ -5,10 +5,12 @@ export const siteConfig = {
   slogan: "An AI-native hospital operating system for African healthcare.",
   shortDescription:
     "Doctium is an AI-native hospital operating system for African healthcare — a hospital EHR and a telemedicine marketplace, with ambient clinical documentation and personalized medicine built in.",
-  // External destinations
+  // External destinations. NB: the staff admin panel (dashboard.doctiumhealth.com)
+  // and the platform API (api.doctiumhealth.com) are intentionally NOT surfaced on
+  // the public site — the dashboard is internal to onboarded Doctium staff, and the
+  // paid API offering isn't launched yet. Patients/doctors sign up here, then use
+  // the mobile apps to sign in.
   links: {
-    dashboard: "https://dashboard.doctiumhealth.com",
-    api: "https://api.doctiumhealth.com",
     signup: "/signup",
     // TEMPORARY store links — swap for the real app listings once published.
     appStore: "https://www.apple.com/app-store/",
@@ -16,10 +18,25 @@ export const siteConfig = {
     demo: "/contact",
     email: "hello@doctiumhealth.com",
   },
+  // Handle is @doctiumhealth / /doctiumhealth across platforms.
+  // NOTE: whatsapp needs the real click-to-chat number or channel invite link.
   social: {
-    linkedin: "#",
-    x: "#",
-    instagram: "#",
+    facebook: "https://facebook.com/doctiumhealth",
+    instagram: "https://instagram.com/doctiumhealth",
+    x: "https://x.com/doctiumhealth",
+    tiktok: "https://tiktok.com/@doctiumhealth",
+    threads: "https://threads.net/@doctiumhealth",
+    linkedin: "https://linkedin.com/company/doctiumhealth",
+    youtube: "https://youtube.com/@doctiumhealth",
+    whatsapp: "https://wa.me/", // TODO: replace with the real WhatsApp number/channel
+  },
+  address: {
+    street: "D12, DPlaza, Sokoto Road",
+    city: "Zaria",
+    region: "Kaduna State",
+    country: "Nigeria",
+    full: "D12, DPlaza, Sokoto Road, Zaria, Kaduna State, Nigeria",
+    maps: "https://www.google.com/maps/search/?api=1&query=DPlaza%2C%20Sokoto%20Road%2C%20Zaria%2C%20Kaduna%20State%2C%20Nigeria",
   },
 } as const;
 
@@ -103,7 +120,6 @@ export const footerNav: NavGroup[] = [
       { label: "Create an account", href: "/signup/patient" },
       { label: "Join as a doctor", href: "/signup/doctor" },
       { label: "Download the app", href: "/telemedicine#download" },
-      { label: "Sign in", href: siteConfig.links.dashboard },
     ],
   },
   {

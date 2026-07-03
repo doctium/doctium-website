@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Menu, X, ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { navGroups, siteConfig } from "@/content/site";
+import { navGroups } from "@/content/site";
 import { useScrollLock } from "@/lib/hooks";
 import { cn } from "@/lib/cn";
 import { EASE_OUT } from "@/lib/motion";
@@ -127,15 +127,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <Link
-            href={siteConfig.links.dashboard}
-            className={cn(
-              "rounded-full px-4 py-2 text-sm font-medium transition-colors",
-              dark ? "text-white/85 hover:text-white" : "text-navy/80 hover:text-navy",
-            )}
-          >
-            Sign in
-          </Link>
           <Button
             href="/signup"
             size="sm"
@@ -217,14 +208,6 @@ export function Header() {
                 </Button>
                 <Button href="/contact" variant="outlineLight" size="lg" className="w-full">
                   Book a demo
-                </Button>
-                <Button
-                  href={siteConfig.links.dashboard}
-                  variant="outlineLight"
-                  size="lg"
-                  className="w-full"
-                >
-                  Sign in
                 </Button>
               </div>
             </motion.nav>

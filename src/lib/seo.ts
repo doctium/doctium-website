@@ -66,6 +66,13 @@ export const organizationJsonLd = {
   description: siteConfig.shortDescription,
   slogan: siteConfig.slogan,
   email: siteConfig.links.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: siteConfig.address.street,
+    addressLocality: siteConfig.address.city,
+    addressRegion: siteConfig.address.region,
+    addressCountry: "NG",
+  },
   areaServed: { "@type": "Country", name: "Nigeria" },
   knowsAbout: [
     "Telemedicine",
