@@ -27,7 +27,7 @@ export default function HomePage() {
         eyebrow="Get started"
         title={
           <>
-            Bring the AI-native OS to your hospital — and Doctium to your patients.
+            Bring the AI-native OS to your hospital, and Doctium to your patients.
           </>
         }
         lede="Book a walkthrough of the Hospital OS, or download the app and see a verified doctor today."

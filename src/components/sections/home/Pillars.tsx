@@ -10,10 +10,10 @@ const pillars = [
     eyebrow: "For hospitals",
     icon: Building2,
     title: "The Hospital OS",
-    desc: "An AI-native EHR that runs clinical, financial and operational workflows — and turns each one into structured data that powers intelligent loops.",
+    desc: "An AI-native EHR that runs clinical, financial and operational workflows, and turns each one into structured data that powers intelligent loops.",
     points: [
-      "14+ modules — billing, insurance, wards, pharmacy, lab & more",
-      "Doctium Scribe — ambient AI documentation",
+      "14+ modules: billing, insurance, wards, pharmacy, lab & more",
+      "Doctium Scribe, ambient AI documentation",
       "Personalized medicine, starting with sickle cell",
     ],
     href: "/ehr",
@@ -24,10 +24,10 @@ const pillars = [
     eyebrow: "For patients & doctors",
     icon: Smartphone,
     title: "Telemedicine marketplace",
-    desc: "A multi-doctor marketplace that connects patients to identity-verified doctors in minutes — with AI triage, secure video, e-prescriptions and chronic-care programs.",
+    desc: "A multi-doctor marketplace that connects patients to identity-verified doctors in minutes, with AI triage, secure video, e-prescriptions and chronic-care programs.",
     points: [
       "MDCN-verified doctors, bookable in minutes",
-      "Leenah — AI symptom checker in five languages",
+      "Leenah, AI symptom checker in seven languages",
       "Signed e-prescriptions, secure video & wallets",
     ],
     href: "/telemedicine",
@@ -43,7 +43,7 @@ export function Pillars() {
         <SectionHeading
           eyebrow="Two arms · one platform"
           title="One platform, built from both ends of care."
-          lede="Doctium meets healthcare where it happens — inside the hospital, and in your patient's hand."
+          lede="Doctium meets healthcare where it happens, inside the hospital, and in your patient's hand."
         />
 
         <RevealGroup className="mt-14 grid gap-6 lg:grid-cols-2" stagger={0.12}>

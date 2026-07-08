@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Doctium — An AI-native hospital operating system for African healthcare";
+  "Doctium: An AI-native hospital operating system for African healthcare";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

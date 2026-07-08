@@ -24,7 +24,7 @@ export function ScribeSection() {
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
                 An ambient clinical documentation assistant built into the EHR.
                 With patient consent, Scribe captures the encounter and generates a
-                structured, reviewable draft — so clinicians can focus fully on the
+                structured, reviewable draft, so clinicians can focus fully on the
                 patient, not the keyboard.
               </p>
             </Reveal>

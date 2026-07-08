@@ -94,7 +94,7 @@ function RiskReadout() {
 
       <div className="mt-4 flex items-center gap-2 border-t border-white/10 pt-3 text-[0.7rem] text-white/65">
         <Check className="h-3.5 w-3.5 text-success" />
-        Surfaced to the clinician — never acts alone
+        Surfaced to the clinician, never acts alone
       </div>
     </div>
   );
@@ -128,7 +128,7 @@ function TitrationCard() {
       </div>
       <p className="mt-2 font-display text-base font-bold">Dose held</p>
       <p className="text-[0.66rem] leading-snug text-white/60">
-        CBC flag · ANC low — guidance sent to the doctor
+        CBC flag · ANC low, guidance sent to the doctor
       </p>
     </div>
   );
@@ -167,7 +167,7 @@ export function PMHero() {
           >
             Our personalized-medicine agents use structured patient data, diagnostics
             and genetics to guide patient-specific decisions. We started where
-            personalization genuinely changes the treatment —{" "}
+            personalization genuinely changes the treatment:{" "}
             <span className="text-white/90">sickle cell disease.</span>
           </motion.p>
 

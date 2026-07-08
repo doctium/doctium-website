@@ -308,7 +308,7 @@ export default async function BlogPostPage({
       <CTASection
         eyebrow="See Doctium in action"
         title={<>Build with an AI-native hospital OS.</>}
-        lede="Book a walkthrough of the Doctium platform — the hospital EHR, ambient documentation and the telemedicine marketplace."
+        lede="Book a walkthrough of the Doctium platform: the hospital EHR, ambient documentation and the telemedicine marketplace."
         primary={{ label: "Book a demo", href: "/contact" }}
         secondary={{ label: "Read more articles", href: "/blog" }}
       />

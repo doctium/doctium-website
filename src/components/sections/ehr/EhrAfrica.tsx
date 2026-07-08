@@ -12,7 +12,7 @@ export function EhrAfrica() {
         <SectionHeading
           eyebrow="Built for Africa"
           title="Designed for how African hospitals actually run."
-          lede="Not a Western EHR with the labels changed. Doctium is built Nigeria-first — for real networks, real workflows and real payment rails — then engineered to scale across the continent."
+          lede="Not a Western EHR with the labels changed. Doctium is built Nigeria-first, for real networks, real workflows and real payment rails, then engineered to scale across the continent."
         />
 
         <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>

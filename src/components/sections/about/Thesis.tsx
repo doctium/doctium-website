@@ -44,7 +44,7 @@ export function Thesis() {
         <Reveal delay={0.18}>
           <div className="mx-auto mt-12 max-w-3xl rounded-3xl border-l-2 border-trust bg-mist px-7 py-7">
             <p className="font-display text-balance text-xl font-semibold leading-relaxed text-navy">
-              &ldquo;AI will assist, recommend, summarize, route and monitor — while licensed
+              &ldquo;AI will assist, recommend, summarize, route and monitor, while licensed
               humans remain responsible for final clinical and financial decisions.&rdquo;
             </p>
           </div>

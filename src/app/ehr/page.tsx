@@ -12,7 +12,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "The Hospital OS",
   description:
-    "Doctium is an AI-native hospital EHR — every clinical, financial and operational workflow becomes structured data that feeds intelligent loops. 14+ modules, doctor-in-the-loop AI, FHIR R4.",
+    "Doctium is an AI-native hospital EHR: every clinical, financial and operational workflow becomes structured data that feeds intelligent loops. 14+ modules, doctor-in-the-loop AI, FHIR R4.",
   path: "/ehr",
 });
 
@@ -30,7 +30,7 @@ export default function EhrPage() {
       <CTASection
         eyebrow="Get started"
         title="Bring the AI-native OS to your hospital."
-        lede="Book a walkthrough of the Hospital OS — see the live finance and insurance modules, the closed loops and the doctor-in-the-loop AI on your own workflows."
+        lede="Book a walkthrough of the Hospital OS: see the live finance and insurance modules, the closed loops and the doctor-in-the-loop AI on your own workflows."
         primary={{ label: "Book a demo", href: "/contact" }}
         secondary={{ label: "Talk to our team", href: "/contact" }}
       />

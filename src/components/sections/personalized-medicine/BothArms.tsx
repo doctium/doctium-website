@@ -23,7 +23,7 @@ const arms = [
     badge: "Coming next",
     badgeTone: "navy" as const,
     title: "Inside the hospital EHR",
-    desc: "We are bringing the same personalized-medicine engine into the Hospital OS — so inpatient and outpatient teams work from one structured record, not a separate tool.",
+    desc: "We are bringing the same personalized-medicine engine into the Hospital OS, so inpatient and outpatient teams work from one structured record, not a separate tool.",
     points: [
       "Same genotype-aware thresholds and scores",
       "Pre-visit brief ready in the clinical station",
@@ -43,7 +43,7 @@ export function BothArms() {
               Proven on the app. <span className="text-gradient-navy">Coming to the EHR.</span>
             </>
           }
-          lede="The same structured patient data drives personalized care in the telemedicine app today and in the hospital EHR next — no separate model, no separate record."
+          lede="The same structured patient data drives personalized care in the telemedicine app today and in the hospital EHR next: no separate model, no separate record."
         />
 
         <RevealGroup className="mt-14 grid gap-6 lg:grid-cols-2" stagger={0.12}>

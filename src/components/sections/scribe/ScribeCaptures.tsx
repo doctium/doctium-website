@@ -22,7 +22,7 @@ export function ScribeCaptures() {
               <span className="text-gradient">eight clinical sections.</span>
             </>
           }
-          lede="Scribe doesn't produce a wall of text. It produces a structured draft — every part of the visit in its place, ready for the clinician to review."
+          lede="Scribe doesn't produce a wall of text. It produces a structured draft: every part of the visit in its place, ready for the clinician to review."
         />
 
         {/* the 8 structured note sections */}

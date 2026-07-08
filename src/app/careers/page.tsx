@@ -16,7 +16,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata = pageMeta({
   title: "Careers",
   description:
-    "Help build the future of African healthcare. Explore open roles at Doctium across engineering, clinical, product and operations — and join a team rebuilding how care is delivered.",
+    "Help build the future of African healthcare. Explore open roles at Doctium across engineering, clinical, product and operations, and join a team rebuilding how care is delivered.",
   path: "/careers",
 });
 
@@ -24,7 +24,7 @@ const VALUES = [
   {
     icon: "HeartPulse",
     title: "Patients first, always",
-    body: "Every decision routes back to the person on the other side of the screen. Clinical safety is not a feature — it is the floor.",
+    body: "Every decision routes back to the person on the other side of the screen. Clinical safety is not a feature; it is the floor.",
   },
   {
     icon: "Globe",
@@ -162,7 +162,7 @@ export default async function CareersPage({
             <Reveal delay={0.16}>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
                 We are a small, deliberate team rebuilding how care is delivered
-                across the continent — telemedicine, the hospital OS, AI clinical
+                across the continent: telemedicine, the hospital OS, AI clinical
                 documentation and personalized medicine, built for African
                 realities.{" "}
                 <span className="text-white/90">
@@ -252,7 +252,7 @@ export default async function CareersPage({
                   <p className="mt-3 text-[0.97rem] leading-relaxed text-muted">
                     But we are always glad to meet people who care about building
                     better healthcare for Africa. Tell us what you would want to
-                    work on — we read every note.
+                    work on, we read every note.
                   </p>
                   <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
                     <Button
@@ -337,7 +337,7 @@ export default async function CareersPage({
       <CTASection
         eyebrow="Don't see your role?"
         title={<>Let&apos;s talk anyway.</>}
-        lede="If you care about the future of African healthcare, we want to hear from you — open role or not. Reach out and tell us how you'd contribute."
+        lede="If you care about the future of African healthcare, we want to hear from you, open role or not. Reach out and tell us how you'd contribute."
         primary={{ label: "Get in touch", href: "/contact" }}
         secondary={{ label: "Our team", href: "/team" }}
       />

@@ -8,12 +8,12 @@ const stances = [
   {
     icon: "ShieldCheck",
     title: "Rules outrank the model",
-    desc: "Hard clinical safety rules take precedence over any LLM output. When a rule and the model disagree, the rule wins — every time.",
+    desc: "Hard clinical safety rules take precedence over any LLM output. When a rule and the model disagree, the rule wins, every time.",
   },
   {
     icon: "Lock",
     title: "Safety rails are never personalized",
-    desc: "Personalization tunes thresholds and nudges. It never relaxes a safety boundary — those limits are fixed and the same for everyone.",
+    desc: "Personalization tunes thresholds and nudges. It never relaxes a safety boundary; those limits are fixed and the same for everyone.",
   },
   {
     icon: "UserCheck",
@@ -23,7 +23,7 @@ const stances = [
   {
     icon: "FileBarChart",
     title: "Research data is reference-only",
-    desc: "Anonymized outcomes power dashboards and research — stripped of names and contacts, used for reference and pilots, never to identify a patient.",
+    desc: "Anonymized outcomes power dashboards and research, stripped of names and contacts, used for reference and pilots, never to identify a patient.",
   },
 ];
 
@@ -35,7 +35,7 @@ export function SafetyStance() {
           eyebrow="Safety stance"
           title={
             <>
-              Personalized — but{" "}
+              Personalized, but{" "}
               <span className="text-gradient-navy">never unsafe.</span>
             </>
           }
@@ -60,7 +60,7 @@ export function SafetyStance() {
 
         <Reveal delay={0.1}>
           <p className="mx-auto mt-12 max-w-3xl text-center text-balance text-lg text-muted">
-            The same discipline runs through the whole platform —{" "}
+            The same discipline runs through the whole platform:{" "}
             <span className="font-semibold text-navy">
               AI assists, recommends and monitors
             </span>

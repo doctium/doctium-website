@@ -17,7 +17,7 @@ export function Manifesto() {
               <span className="text-gradient-navy">clinical operating system.</span>
             </>
           }
-          lede="Every clinical, financial, operational and administrative workflow produces a structured artifact. Those artifacts feed intelligent closed loops — so the hospital gets smarter with every encounter."
+          lede="Every clinical, financial, operational and administrative workflow produces a structured artifact. Those artifacts feed intelligent closed loops, so the hospital gets smarter with every encounter."
         />
 
         <RevealGroup className="relative mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

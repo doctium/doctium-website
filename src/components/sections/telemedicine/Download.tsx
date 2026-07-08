@@ -24,7 +24,7 @@ function AppHome() {
         <p className="font-display text-base font-bold">How can we help today?</p>
         <div className="mt-3 flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-[0.7rem] text-white/75">
           <Bot className="h-3.5 w-3.5 text-sky" />
-          Ask Leenah — AI symptom checker
+          Ask Leenah, AI symptom checker
         </div>
       </div>
 
@@ -108,7 +108,7 @@ export function Download() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-                The full marketplace lives in your pocket — verified doctors, Leenah triage,
+                The full marketplace lives in your pocket: verified doctors, Leenah triage,
                 secure consults, signed prescriptions, wallets and MediGram health reels.
                 Available now on the App Store and Google Play.
               </p>

@@ -11,7 +11,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Telemedicine",
   description:
-    "Doctium's telemedicine marketplace connects patients to identity-verified doctors in minutes — AI triage, secure chat/voice/video, signed e-prescriptions, chronic-care programs, in five languages.",
+    "Doctium's telemedicine marketplace connects patients to identity-verified doctors in minutes: AI triage, secure chat/voice/video, signed e-prescriptions, chronic-care programs, in seven languages.",
   path: "/telemedicine",
 });
 

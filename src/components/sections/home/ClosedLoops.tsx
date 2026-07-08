@@ -22,7 +22,7 @@ export function ClosedLoops() {
               <span className="text-gradient">Better outcomes</span> out.
             </>
           }
-          lede="AI assists, recommends, summarizes, routes and monitors against the hospital's own data — while licensed humans stay responsible for every final clinical and financial decision."
+          lede="AI assists, recommends, summarizes, routes and monitors against the hospital's own data, while licensed humans stay responsible for every final clinical and financial decision."
         />
 
         <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.1}>
@@ -50,8 +50,8 @@ export function ClosedLoops() {
           <p className="mx-auto mt-12 max-w-3xl text-center text-balance text-lg text-white/70">
             Together these loops help hospitals{" "}
             <span className="text-white">improve care quality, reduce documentation burden,
-            prevent revenue leakage, speed up operations</span>{" "}
-            — and prepare for personalized medicine.
+            prevent revenue leakage, speed up operations,</span>{" "}
+            and prepare for personalized medicine.
           </p>
         </Reveal>
       </Container>

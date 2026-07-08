@@ -85,7 +85,7 @@ export function PatientSignupForm() {
   if (step === "done") {
     return (
       <DownloadPanel
-        heading="You're in — welcome to Doctium."
+        heading="You're in, welcome to Doctium."
         subtitle="Your patient account is ready. Download the app to see verified doctors, book consultations, and manage your care."
         next="Download the Doctium app on your phone and sign in with this number to start."
       />

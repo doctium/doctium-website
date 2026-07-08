@@ -14,7 +14,7 @@ const steps = [
   {
     icon: TrendingUp,
     title: "Track the dose-response",
-    desc: "Each patient's response to hydroxyurea is followed over time — the dose that works for one is rarely the dose for another.",
+    desc: "Each patient's response to hydroxyurea is followed over time; the dose that works for one is rarely the dose for another.",
   },
   {
     icon: TestTube,
@@ -24,7 +24,7 @@ const steps = [
   {
     icon: UserCheck,
     title: "Guidance goes to the doctor",
-    desc: "When a hold-dose is indicated, the recommendation is surfaced to the clinician — who makes the call. Patients never self-dose.",
+    desc: "When a hold-dose is indicated, the recommendation is surfaced to the clinician, who makes the call. Patients never self-dose.",
   },
 ];
 
@@ -69,7 +69,7 @@ function TitrationChart() {
       <div className="mt-5 flex items-start gap-2.5 rounded-2xl border border-warning/20 bg-warning/5 p-3.5">
         <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-warning" />
         <p className="text-[0.8rem] leading-snug text-white/80">
-          <span className="font-semibold text-white">Week 7 — CBC flag:</span> ANC low.
+          <span className="font-semibold text-white">Week 7, CBC flag:</span> ANC low.
           Hold-dose guidance sent to the treating doctor for review.
         </p>
       </div>
@@ -101,7 +101,7 @@ export function Titration() {
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
                 Finding the right hydroxyurea dose is the clearest example of personalized
                 medicine in sickle cell care. Doctium tracks the response and the safety
-                signals — but the doctor always decides, and the patient is told, plainly,
+                signals, but the doctor always decides, and the patient is told, plainly,
                 never to self-dose.
               </p>
             </Reveal>

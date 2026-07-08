@@ -11,7 +11,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata = pageMeta({
   title: "About",
   description:
-    "Doctium is building an AI-native hospital operating system for African healthcare — not a traditional EHR. Every workflow produces structured artifacts that feed intelligent closed loops, while licensed humans stay responsible for final decisions.",
+    "Doctium is building an AI-native hospital operating system for African healthcare, not a traditional EHR. Every workflow produces structured artifacts that feed intelligent closed loops, while licensed humans stay responsible for final decisions.",
   path: "/about",
 });
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <CTASection
         eyebrow="Join us"
         title="Join us in rebuilding African healthcare."
-        lede="Whether you run a hospital, practise medicine, or want to partner on the AI-native future of care — we'd love to talk."
+        lede="Whether you run a hospital, practise medicine, or want to partner on the AI-native future of care, we'd love to talk."
         primary={{ label: "Get in touch", href: "/contact" }}
         secondary={{ label: "Explore the Hospital OS", href: "/ehr" }}
       />

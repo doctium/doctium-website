@@ -24,7 +24,7 @@ const reachLinks = [
     label: "Email us",
     value: siteConfig.links.email,
     href: `mailto:${siteConfig.links.email}`,
-    note: "Hospitals & patients — a real human replies.",
+    note: "Hospitals & patients: a real human replies.",
   },
   {
     icon: Phone,
@@ -52,7 +52,7 @@ const reachLinks = [
     label: "Visit us",
     value: siteConfig.address.full,
     href: siteConfig.address.maps,
-    note: "Doctium HQ — Zaria, Kaduna State.",
+    note: "Doctium HQ, Zaria, Kaduna State.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   </div>
                   <p className="mt-2 text-[0.85rem] leading-relaxed text-navy/80">
                     Doctium keeps a doctor in the loop on every AI decision. Tell us about
-                    your hospital and patients — we&apos;ll bring the right person to the
+                    your hospital and patients, we&apos;ll bring the right person to the
                     conversation.
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="For patients"
             title="Get the Doctium app."
-            lede="See a verified doctor in minutes, ask Leenah, and manage your care — on iOS and Android."
+            lede="See a verified doctor in minutes, ask Leenah, and manage your care, on iOS and Android."
           />
           <Reveal delay={0.1}>
             <div className="mt-10 flex flex-col items-center gap-5">
@@ -142,7 +142,7 @@ export default function ContactPage() {
       <CTASection
         eyebrow="Ready when you are"
         title="Ready when you are."
-        lede="Reach out and we'll get back quickly — with the right person for what you need."
+        lede="Reach out and we'll get back quickly, with the right person for what you need."
         primary={{ label: "Email us", href: `mailto:${siteConfig.links.email}` }}
         secondary={{ label: "For patients", href: "/telemedicine" }}
       />

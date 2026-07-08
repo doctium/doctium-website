@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description:
       post.metaDescription ??
       post.excerpt ??
-      `${post.title} — from the Doctium newsroom.`,
+      `${post.title}, from the Doctium newsroom.`,
     path: `/newsroom/${post.slug}`,
     image: post.ogImageUrl || post.coverImageUrl || undefined,
   });

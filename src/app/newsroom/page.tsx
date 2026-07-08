@@ -15,7 +15,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Newsroom",
   description:
-    "Announcements and press coverage from Doctium — the AI-powered hospital operating system and telemedicine platform built for Nigeria.",
+    "Announcements and press coverage from Doctium, the AI-powered hospital operating system and telemedicine platform built for Nigeria.",
   path: "/newsroom",
 });
 
@@ -150,7 +150,7 @@ function EmptyState() {
         <h2 className="text-xl font-bold text-navy">Nothing here yet</h2>
         <p className="mt-3 text-[0.95rem] leading-relaxed text-muted">
           We&rsquo;re just getting started. Announcements and press coverage will appear here
-          soon — check back shortly.
+          soon; check back shortly.
         </p>
       </div>
     </Reveal>
@@ -184,7 +184,7 @@ export default async function NewsroomPage() {
             <Reveal delay={0.14}>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
                 Official announcements from the team and a running record of where Doctium shows
-                up in the press — as we build the AI-powered operating system for healthcare in
+                up in the press, as we build the AI-powered operating system for healthcare in
                 Nigeria.
               </p>
             </Reveal>
@@ -210,7 +210,7 @@ export default async function NewsroomPage() {
                   align="left"
                   eyebrow="Announcements"
                   title="Straight from the team"
-                  lede="Product launches, partnerships and milestones — published by Doctium."
+                  lede="Product launches, partnerships and milestones, published by Doctium."
                 />
                 <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {announcements.map((item) => (

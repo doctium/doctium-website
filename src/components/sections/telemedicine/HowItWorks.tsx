@@ -8,7 +8,7 @@ const steps = [
   {
     n: "01",
     icon: MessageSquareText,
-    title: "Describe it — or ask Leenah",
+    title: "Describe it, or ask Leenah",
     desc: "Tell Leenah, our AI symptom checker, what's going on in your own words or by voice. A safety-first red-flag engine screens for emergencies before anything else.",
   },
   {
@@ -33,7 +33,7 @@ export function HowItWorks() {
           eyebrow="How it works · for patients"
           title={
             <>
-              Care in three steps — <span className="text-gradient-navy">no waiting room.</span>
+              Care in three steps: <span className="text-gradient-navy">no waiting room.</span>
             </>
           }
           lede="From the first symptom to a signed prescription, the whole journey lives in one app."
@@ -72,7 +72,7 @@ export function HowItWorks() {
         <Reveal delay={0.1}>
           <p className="mx-auto mt-12 max-w-2xl text-balance text-center text-base text-muted">
             <span className="font-semibold text-navy">AI assists; a licensed doctor decides.</span>{" "}
-            Leenah never prescribes or diagnoses on its own — it triages and routes you to a real,
+            Leenah never prescribes or diagnoses on its own; it triages and routes you to a real,
             verified clinician.
           </p>
         </Reveal>

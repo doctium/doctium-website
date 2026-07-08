@@ -9,13 +9,13 @@ const products = [
   {
     icon: "Database",
     title: "Hospital OS (EHR)",
-    desc: "An AI-native EHR uniting clinical, financial, operational and administrative workflows — shipping module by module.",
+    desc: "An AI-native EHR uniting clinical, financial, operational and administrative workflows, shipping module by module.",
     href: "/ehr",
   },
   {
     icon: "Video",
     title: "Telemedicine marketplace",
-    desc: "Patients reach MDCN-verified doctors in minutes over secure chat, voice and video — with AI triage and signed e-prescriptions.",
+    desc: "Patients reach MDCN-verified doctors in minutes over secure chat, voice and video, with AI triage and signed e-prescriptions.",
     href: "/telemedicine",
   },
   {
@@ -43,7 +43,7 @@ export function WhatWeBuild() {
               One platform, <span className="text-gradient-navy">four ways</span> in.
             </>
           }
-          lede="The Hospital OS and a patient-facing telemedicine marketplace, with ambient documentation and personalized medicine built in — all sharing one structured record."
+          lede="The Hospital OS and a patient-facing telemedicine marketplace, with ambient documentation and personalized medicine built in, all sharing one structured record."
         />
 
         <RevealGroup className="mt-14 grid gap-6 md:grid-cols-2" stagger={0.08}>

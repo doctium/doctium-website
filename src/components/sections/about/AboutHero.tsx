@@ -138,7 +138,7 @@ export function AboutHero() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-white/75"
           >
             Not a traditional EHR. Every clinical, financial, operational and administrative
-            workflow produces structured artifacts that feed intelligent closed loops —{" "}
+            workflow produces structured artifacts that feed intelligent closed loops,{" "}
             <span className="text-white/90">while licensed humans remain responsible for
             final clinical and financial decisions.</span>
           </motion.p>

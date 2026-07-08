@@ -9,7 +9,7 @@ import { AuroraBackground } from "@/components/motion/AuroraBackground";
 export const metadata = pageMeta({
   title: "Sign up",
   description:
-    "Create your Doctium account — sign up as a patient to see verified doctors in minutes, or join as a doctor to consult patients and grow your practice.",
+    "Create your Doctium account: sign up as a patient to see verified doctors in minutes, or join as a doctor to consult patients and grow your practice.",
   path: "/signup",
 });
 
@@ -18,14 +18,14 @@ const roles = [
     href: "/signup/patient",
     icon: HeartPulse,
     label: "I'm a patient",
-    desc: "See verified doctors in minutes — chat, voice and video, prescriptions and follow-up care.",
+    desc: "See verified doctors in minutes: chat, voice and video, prescriptions and follow-up care.",
     cta: "Sign up as a patient",
   },
   {
     href: "/signup/doctor",
     icon: Stethoscope,
     label: "I'm a doctor",
-    desc: "Consult patients on your own schedule, set your availability, and get paid — reviewed and verified.",
+    desc: "Consult patients on your own schedule, set your availability, and get paid, reviewed and verified.",
     cta: "Join as a doctor",
   },
 ];

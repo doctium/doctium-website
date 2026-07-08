@@ -19,7 +19,7 @@ export function Capabilities() {
               A complete <span className="text-gradient">sickle cell</span> care system.
             </>
           }
-          lede="Built and running for the telemedicine side today — doctors use it, the admin panel tracks outcomes — and being brought into the hospital EHR next."
+          lede="Built and running for the telemedicine side today, doctors use it, the admin panel tracks outcomes, and being brought into the hospital EHR next."
         />
 
         <RevealGroup
@@ -41,7 +41,7 @@ export function Capabilities() {
 
         <Reveal delay={0.1}>
           <p className="mx-auto mt-12 max-w-3xl text-center text-balance text-lg text-white/70">
-            One structured patient profile drives all of it —{" "}
+            One structured patient profile drives all of it:{" "}
             <span className="text-white">
               genotype, diagnostics, crisis history and daily readings
             </span>{" "}

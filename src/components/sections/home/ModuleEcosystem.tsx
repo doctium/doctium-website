@@ -13,7 +13,7 @@ export function ModuleEcosystem() {
         <SectionHeading
           eyebrow="The Hospital OS"
           title="One platform for the whole hospital."
-          lede="From the front desk to the ward, the lab to the finance office — every module shares one structured record, and more ship continuously."
+          lede="From the front desk to the ward, the lab to the finance office, every module shares one structured record, and more ship continuously."
         />
 
         <RevealGroup

@@ -18,7 +18,7 @@ function AppMock() {
         <p className="font-display text-base font-bold">How are you feeling?</p>
         <div className="mt-3 flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-[0.7rem] text-white/70">
           <Bot className="h-3.5 w-3.5 text-sky" />
-          Ask Leenah — AI symptom checker
+          Ask Leenah, AI symptom checker
         </div>
       </div>
       {/* doctor card */}
@@ -75,7 +75,7 @@ export function TelemedicineSection() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-                The consumer side of Doctium — a multi-doctor marketplace where patients
+                The consumer side of Doctium, a multi-doctor marketplace where patients
                 meet identity-verified doctors over chat, voice and video, guided by
                 AI triage and backed by digital prescriptions and chronic-care programs.
               </p>

@@ -25,7 +25,7 @@ export function ScribeOutcomes() {
               <span className="text-gradient-navy">Richer for the hospital.</span>
             </>
           }
-          lede="Better documentation is not just convenience — it compounds into care, revenue and the structured data that future personalized medicine depends on."
+          lede="Better documentation is not just convenience; it compounds into care, revenue and the structured data that future personalized medicine depends on."
         />
 
         <RevealGroup
@@ -46,7 +46,7 @@ export function ScribeOutcomes() {
 
         <Reveal delay={0.1}>
           <p className="mx-auto mt-12 max-w-3xl text-balance text-center text-lg text-muted">
-            Every approved note adds to a clean, structured clinical history —{" "}
+            Every approved note adds to a clean, structured clinical history,{" "}
             <span className="font-semibold text-navy">the foundation for continuity of care
             and personalized medicine</span> across the whole Doctium platform.
           </p>

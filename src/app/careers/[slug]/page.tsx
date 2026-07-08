@@ -41,7 +41,7 @@ export async function generateMetadata({
     });
   }
   return pageMeta({
-    title: job.metaTitle ?? `${job.title} — Careers at Doctium`,
+    title: job.metaTitle ?? `${job.title}: Careers at Doctium`,
     description:
       job.metaDescription ??
       job.summary ??

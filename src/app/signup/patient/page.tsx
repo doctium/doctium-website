@@ -10,13 +10,13 @@ import { PatientSignupForm } from "@/components/sections/signup/PatientSignupFor
 export const metadata = pageMeta({
   title: "Create your patient account",
   description:
-    "Sign up for Doctium to see verified doctors in minutes — chat, voice and video consultations, prescriptions and follow-up care, on iOS and Android.",
+    "Sign up for Doctium to see verified doctors in minutes: chat, voice and video consultations, prescriptions and follow-up care, on iOS and Android.",
   path: "/signup/patient",
 });
 
 const points = [
-  { icon: Clock, text: "See a verified doctor in minutes — no waiting rooms." },
-  { icon: MessageSquare, text: "Chat, voice or video — and ask Leenah anytime." },
+  { icon: Clock, text: "See a verified doctor in minutes, no waiting rooms." },
+  { icon: MessageSquare, text: "Chat, voice or video, and ask Leenah anytime." },
   { icon: ShieldCheck, text: "Your health data is encrypted and private to you." },
 ];
 

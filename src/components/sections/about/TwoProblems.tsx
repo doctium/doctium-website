@@ -11,7 +11,7 @@ const problems = [
     eyebrow: "Problem 01",
     problem: "Doctors spend too much time documenting.",
     answer: "Doctium Scribe",
-    desc: "With patient consent, Scribe turns the consultation into a structured, reviewable clinical note — so clinicians focus fully on the patient, not the keyboard.",
+    desc: "With patient consent, Scribe turns the consultation into a structured, reviewable clinical note, so clinicians focus fully on the patient, not the keyboard.",
     href: "/scribe",
     cta: "How Scribe works",
   },
@@ -21,7 +21,7 @@ const problems = [
     eyebrow: "Problem 02",
     problem: "Patients receive generic care.",
     answer: "Personalized-medicine agents",
-    desc: "Our agents use structured patient data, diagnostics and genetics to guide patient-specific treatment decisions — starting with sickle cell disease, where personalization genuinely changes the treatment.",
+    desc: "Our agents use structured patient data, diagnostics and genetics to guide patient-specific treatment decisions, starting with sickle cell disease, where personalization genuinely changes the treatment.",
     href: "/personalized-medicine",
     cta: "Explore personalized medicine",
   },
@@ -39,7 +39,7 @@ export function TwoProblems() {
               <span className="text-gradient-navy">changes the outcome.</span>
             </>
           }
-          lede="Two painful, universal problems in clinical care — and the first AI workflows we built to solve them."
+          lede="Two painful, universal problems in clinical care, and the first AI workflows we built to solve them."
         />
 
         <RevealGroup className="mt-14 grid gap-6 md:grid-cols-2" stagger={0.1}>

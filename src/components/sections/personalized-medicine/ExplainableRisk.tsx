@@ -20,7 +20,7 @@ const factors: Factor[] = [
   { label: "Low hydration", detail: "below personal baseline", weight: 20, tone: "warn" },
   { label: "Harmattan season", detail: "live local weather · dry & dusty", weight: 12, tone: "trust" },
   { label: "Low SpO₂ reading", detail: "94% · trending down", weight: 9, tone: "trust" },
-  { label: "Quiet — no readings", detail: "3 days without a check-in", weight: 6, tone: "trust" },
+  { label: "Quiet: no readings", detail: "3 days without a check-in", weight: 6, tone: "trust" },
 ];
 
 const total = factors.reduce((s, f) => s + f.weight, 0);
@@ -69,8 +69,8 @@ export function ExplainableRisk() {
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
                 There is no black box. A patient&apos;s risk level is the sum of named,
-                weighted factors — including live local weather such as the harmattan
-                season — so the clinician can always see exactly why the number moved.
+                weighted factors, including live local weather such as the harmattan
+                season, so the clinician can always see exactly why the number moved.
               </p>
             </Reveal>
 
@@ -79,7 +79,7 @@ export function ExplainableRisk() {
                 <Lock className="mt-0.5 h-5 w-5 shrink-0 text-trust-deep" />
                 <p className="text-[0.92rem] leading-relaxed text-navy">
                   <span className="font-semibold">Safety rails are never personalized.</span>{" "}
-                  Personalization tunes thresholds and nudges — but the hard safety
+                  Personalization tunes thresholds and nudges, but the hard safety
                   boundaries are fixed rules that the model cannot move.
                 </p>
               </div>

@@ -22,7 +22,7 @@ export function EhrTrust() {
               <span className="text-gradient">accountable.</span>
             </>
           }
-          lede="An AI-native OS for a hospital has to be safe, auditable and interoperable from the ground up. Doctium is built that way — not bolted onto a legacy core."
+          lede="An AI-native OS for a hospital has to be safe, auditable and interoperable from the ground up. Doctium is built that way, not bolted onto a legacy core."
         />
 
         <RevealGroup className="mt-14 grid gap-5 md:grid-cols-2" stagger={0.1}>

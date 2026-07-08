@@ -22,7 +22,7 @@ export function EhrClosedLoops() {
               <span className="text-gradient">closes</span> by default.
             </>
           }
-          lede="Care quality, documentation burden, revenue integrity and operational speed — each one fed by the hospital's own structured artifacts, in real time."
+          lede="Care quality, documentation burden, revenue integrity and operational speed, each one fed by the hospital's own structured artifacts, in real time."
         />
 
         <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.1}>
@@ -51,7 +51,7 @@ export function EhrClosedLoops() {
             <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-sky" />
             <p className="text-balance text-[0.95rem] text-white/80">
               <span className="font-semibold text-white">AI assists; licensed humans decide.</span>{" "}
-              Every loop surfaces to a clinician or administrator — it never acts alone.
+              Every loop surfaces to a clinician or administrator; it never acts alone.
             </p>
           </div>
         </Reveal>

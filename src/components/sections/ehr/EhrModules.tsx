@@ -13,7 +13,7 @@ export function EhrModules() {
         <SectionHeading
           eyebrow="Module ecosystem"
           title="One platform for the whole hospital."
-          lede="From the front desk to the ward, the lab to the finance office — 14+ modules share one structured record. Billing & Revenue and Insurance / HMO / NHIA are live today; the rest of the clinical suite rolls out continuously."
+          lede="From the front desk to the ward, the lab to the finance office, 14+ modules share one structured record. Billing & Revenue and Insurance / HMO / NHIA are live today; the rest of the clinical suite rolls out continuously."
         />
 
         <RevealGroup

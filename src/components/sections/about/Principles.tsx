@@ -15,7 +15,7 @@ const principles = [
   {
     icon: "MapPin",
     title: "Built for Africa, Nigeria-first",
-    desc: "Designed around how Nigerian hospitals, doctors and patients actually work — then built to scale across the continent, with five languages and local payments.",
+    desc: "Designed around how Nigerian hospitals, doctors and patients actually work, then built to scale across the continent, with seven languages and local payments.",
   },
   {
     icon: "FileJson",
@@ -25,7 +25,7 @@ const principles = [
   {
     icon: "ShieldCheck",
     title: "Safety-first",
-    desc: "Recording is consent-gated and audit-logged, with least-privilege access. Deterministic rules outrank the model — guardrails win when they disagree.",
+    desc: "Recording is consent-gated and audit-logged, with least-privilege access. Deterministic rules outrank the model: guardrails win when they disagree.",
   },
 ];
 

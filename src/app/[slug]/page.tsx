@@ -119,7 +119,7 @@ export default async function LandingPage({ params }: PageProps) {
             <Markdown>{page.bodyMd}</Markdown>
           ) : (
             <p className="text-lg leading-relaxed text-muted">
-              More detail on this is on the way — check back soon.
+              More detail on this is on the way; check back soon.
             </p>
           )}
         </Container>

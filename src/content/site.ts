@@ -4,7 +4,7 @@ export const siteConfig = {
   url: "https://doctiumhealth.com",
   slogan: "An AI-native hospital operating system for African healthcare.",
   shortDescription:
-    "Doctium is an AI-native hospital operating system for African healthcare — a hospital EHR and a telemedicine marketplace, with ambient clinical documentation and personalized medicine built in.",
+    "Doctium is an AI-native hospital operating system for African healthcare, a hospital EHR and a telemedicine marketplace, with ambient clinical documentation and personalized medicine built in.",
   // External destinations. NB: the staff admin panel (dashboard.doctiumhealth.com)
   // and the platform API (api.doctiumhealth.com) are intentionally NOT surfaced on
   // the public site — the dashboard is internal to onboarded Doctium staff, and the
@@ -52,7 +52,7 @@ export const navGroups: NavGroup[] = [
       {
         label: "The Hospital OS",
         href: "/ehr",
-        desc: "AI-native EHR — clinical, financial & operational workflows",
+        desc: "AI-native EHR: clinical, financial & operational workflows",
       },
       {
         label: "Doctium Scribe",
@@ -72,7 +72,7 @@ export const navGroups: NavGroup[] = [
       {
         label: "Telemedicine",
         href: "/telemedicine",
-        desc: "See a verified doctor in minutes — chat, voice & video",
+        desc: "See a verified doctor in minutes: chat, voice & video",
       },
       {
         label: "Create an account",
@@ -91,7 +91,7 @@ export const navGroups: NavGroup[] = [
     links: [
       { label: "About", href: "/about", desc: "The AI-native OS thesis & mission" },
       { label: "Team", href: "/team", desc: "The people building Doctium" },
-      { label: "Careers", href: "/careers", desc: "Open roles — build with us" },
+      { label: "Careers", href: "/careers", desc: "Open roles, build with us" },
       { label: "Contact", href: "/contact", desc: "Book a demo or talk to our team" },
     ],
   },

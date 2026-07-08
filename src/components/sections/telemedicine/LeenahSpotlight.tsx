@@ -10,17 +10,17 @@ const capabilities = [
   {
     icon: ShieldAlert,
     title: "Safety-first by design",
-    desc: "A deterministic red-flag engine screens for emergencies and outranks the language model — safety never depends on the LLM getting it right.",
+    desc: "A deterministic red-flag engine screens for emergencies and outranks the language model; safety never depends on the LLM getting it right.",
   },
   {
     icon: Languages,
-    title: "Five languages",
-    desc: "English, Nigerian Pidgin, Hausa, Yoruba and Igbo — Leenah meets patients in the language they think in.",
+    title: "Seven languages",
+    desc: "English, Nigerian Pidgin, Hausa, Yoruba, Igbo, French and Arabic: Leenah meets patients in the language they think in.",
   },
   {
     icon: Mic,
     title: "Voice in, voice out",
-    desc: "Speak your symptoms with speech-to-text, and hear Leenah reply — built for low-literacy and on-the-go use.",
+    desc: "Speak your symptoms with speech-to-text, and hear Leenah reply, built for low-literacy and on-the-go use.",
   },
   {
     icon: Route,
@@ -34,7 +34,7 @@ const capabilities = [
   },
 ];
 
-const languages = ["English", "Pidgin", "Hausa", "Yoruba", "Igbo"];
+const languages = ["English", "Pidgin", "Hausa", "Yoruba", "Igbo", "French", "Arabic"];
 
 function LeenahChat() {
   return (
@@ -61,7 +61,7 @@ function LeenahChat() {
           Belle dey pain me since morning, and I get small fever.
         </p>
         <p className="ml-auto w-fit max-w-[16rem] rounded-2xl rounded-tr-md bg-trust/30 px-3.5 py-2 text-[0.82rem] text-white">
-          Sorry to hear that. Where exactly does it hurt — and is the pain sharp or dull?
+          Sorry to hear that. Where exactly does it hurt, and is the pain sharp or dull?
         </p>
         <p className="w-fit max-w-[16rem] rounded-2xl rounded-tl-md bg-white/8 px-3.5 py-2 text-[0.82rem] text-white/85">
           Lower right side, sharp.
@@ -73,7 +73,7 @@ function LeenahChat() {
         <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0 text-warning" />
         <p className="text-[0.78rem] leading-snug text-white/85">
           <span className="font-semibold text-white">Red-flag check:</span> possible appendicitis
-          pattern — recommending an urgent in-person review, not self-care.
+          pattern, recommending an urgent in-person review, not self-care.
         </p>
       </div>
 
@@ -109,7 +109,7 @@ export function LeenahSpotlight() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
-                Leenah is Doctium&apos;s AI symptom checker — a conversational, multilingual
+                Leenah is Doctium&apos;s AI symptom checker: a conversational, multilingual
                 guide that listens, asks the right questions, and routes you to the right care.
                 A deterministic red-flag engine always outranks the model, so emergencies are
                 never missed.

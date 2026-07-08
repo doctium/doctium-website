@@ -48,7 +48,7 @@ export function WhereWeAre() {
               <span className="text-gradient-navy">continuously.</span>
             </>
           }
-          lede="An honest snapshot of what is in production today — and what is rolling out next."
+          lede="An honest snapshot of what is in production today, and what is rolling out next."
         />
 
         <RevealGroup
@@ -83,7 +83,7 @@ export function WhereWeAre() {
           <div className="grain relative isolate mt-10 flex flex-col items-center justify-between gap-5 overflow-hidden rounded-3xl bg-navy-cinematic px-7 py-7 text-center sm:flex-row sm:text-left">
             <p className="relative z-10 text-balance text-base text-white/80">
               <span className="font-semibold text-white">Get the Doctium app.</span>{" "}
-              See a verified doctor from your phone — available on iOS and Android.
+              See a verified doctor from your phone, available on iOS and Android.
             </p>
             <StoreBadges className="relative z-10 shrink-0 justify-center" />
           </div>

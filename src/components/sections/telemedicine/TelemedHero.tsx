@@ -13,7 +13,7 @@ import { EASE_OUT } from "@/lib/motion";
 const heroChips = [
   "Live on iOS & Android",
   "MDCN-verified doctors",
-  "Five languages",
+  "Seven languages",
   "Signed e-prescriptions",
 ];
 
@@ -136,8 +136,8 @@ export function TelemedHero() {
           >
             Doctium is a multi-doctor telemedicine marketplace. Describe your symptoms,
             let Leenah triage you safely, then meet an identity-verified doctor over chat,
-            voice or video — with signed prescriptions and chronic-care programs built in,
-            in five languages.
+            voice or video, with signed prescriptions and chronic-care programs built in,
+            in seven languages.
           </motion.p>
 
           <motion.div

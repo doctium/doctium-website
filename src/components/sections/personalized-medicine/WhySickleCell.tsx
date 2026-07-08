@@ -13,12 +13,12 @@ const reasons = [
   {
     icon: "FlaskConical",
     title: "Genotype testing is cheap & normalized",
-    desc: "SS, SC and AS genotyping is routine and affordable — so genotype-aware care is realistic at scale, not aspirational.",
+    desc: "SS, SC and AS genotyping is routine and affordable, so genotype-aware care is realistic at scale, not aspirational.",
   },
   {
     icon: "TestTube",
     title: "Hydroxyurea titration is truly n-of-1",
-    desc: "The right dose is found per patient through dose-response and CBC monitoring — the textbook definition of personalized medicine.",
+    desc: "The right dose is found per patient through dose-response and CBC monitoring, the textbook definition of personalized medicine.",
   },
   {
     icon: "Database",
@@ -40,7 +40,7 @@ export function WhySickleCell() {
               <span className="text-gradient-navy">changes the treatment.</span>
             </>
           }
-          lede="Personalized medicine only matters when the individual's data genuinely alters the decision. Sickle cell disease is one of the clearest cases — and in Nigeria, it is also the most urgent."
+          lede="Personalized medicine only matters when the individual's data genuinely alters the decision. Sickle cell disease is one of the clearest cases, and in Nigeria, it is also the most urgent."
         />
 
         <RevealGroup
@@ -72,8 +72,8 @@ export function WhySickleCell() {
               <span className="font-semibold text-white">
                 only where the individual&apos;s genetics, diagnostics and history
                 should move the clinical decision
-              </span>{" "}
-              — and we prove the case before we expand to the next condition.
+              </span>,{" "}
+              and we prove the case before we expand to the next condition.
             </p>
           </div>
         </Reveal>

@@ -49,7 +49,7 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Doctium — Blog &amp; Newsroom</title>
+    <title>Doctium: Blog &amp; Newsroom</title>
     <link>${siteConfig.url}</link>
     <description>${esc(siteConfig.slogan)}</description>
     <language>en-NG</language>

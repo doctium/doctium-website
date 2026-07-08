@@ -9,7 +9,7 @@ const steps = [
     n: "01",
     icon: "Mic",
     title: "Consent & capture",
-    desc: "With explicit patient consent, Scribe captures the encounter — from chat, dictation or a consented recording.",
+    desc: "With explicit patient consent, Scribe captures the encounter: from chat, dictation or a consented recording.",
   },
   {
     n: "02",
@@ -27,7 +27,7 @@ const steps = [
     n: "04",
     icon: "Check",
     title: "Approved into the record",
-    desc: "Only once the clinician approves does the note become part of the official patient record — with provenance attached.",
+    desc: "Only once the clinician approves does the note become part of the official patient record, with provenance attached.",
   },
 ];
 
@@ -40,7 +40,7 @@ export function ScribeHowItWorks() {
           title={
             <>
               From conversation to{" "}
-              <span className="text-gradient-navy">approved note</span> — in four steps.
+              <span className="text-gradient-navy">approved note</span>, in four steps.
             </>
           }
           lede="Scribe drafts; the clinician decides. The doctor is in the loop at every step that matters."

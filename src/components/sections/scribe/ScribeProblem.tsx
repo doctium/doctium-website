@@ -20,7 +20,7 @@ export function ScribeProblem() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-                Clinicians spend hours every day turning conversations into notes — splitting
+                Clinicians spend hours every day turning conversations into notes, splitting
                 attention between the patient and the keyboard. Charts stay thin, billing cues
                 get missed, and the record never quite reflects what happened in the room.
               </p>
@@ -28,7 +28,7 @@ export function ScribeProblem() {
             <Reveal delay={0.16}>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
                 Scribe lifts that weight. It listens with consent, drafts the structure, and hands
-                a complete, reviewable note back to the doctor — who stays fully in control.
+                a complete, reviewable note back to the doctor, who stays fully in control.
               </p>
             </Reveal>
           </div>

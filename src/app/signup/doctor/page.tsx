@@ -10,14 +10,14 @@ import { DoctorSignupForm } from "@/components/sections/signup/DoctorSignupForm"
 export const metadata = pageMeta({
   title: "Join Doctium as a doctor",
   description:
-    "Register as a doctor on Doctium — consult patients by chat, voice and video, set your own availability, and get paid. New registrations are reviewed before going live.",
+    "Register as a doctor on Doctium: consult patients by chat, voice and video, set your own availability, and get paid. New registrations are reviewed before going live.",
   path: "/signup/doctor",
 });
 
 const points = [
   { icon: CalendarClock, text: "Set your own hours and consult from anywhere." },
   { icon: Wallet, text: "Transparent earnings, paid to your Doctium wallet." },
-  { icon: ShieldCheck, text: "A clinician-led platform — reviewed and verified." },
+  { icon: ShieldCheck, text: "A clinician-led platform, reviewed and verified." },
 ];
 
 export default function DoctorSignupPage() {
@@ -31,7 +31,7 @@ export default function DoctorSignupPage() {
             tone="dark"
             eyebrow="For doctors"
             title="Join Doctium as a doctor"
-            lede="Create your account and verify your email and phone. Our team reviews new registrations before you go live — you'll finish verification in the doctor app."
+            lede="Create your account and verify your email and phone. Our team reviews new registrations before you go live; you'll finish verification in the doctor app."
           />
         </Container>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-canvas" />

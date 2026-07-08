@@ -28,7 +28,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Doctium — An AI-native hospital operating system for African healthcare",
+    default: "Doctium: An AI-native hospital operating system for African healthcare",
     template: "%s · Doctium",
   },
   description: siteConfig.shortDescription,
@@ -50,12 +50,12 @@ export const metadata: Metadata = {
     locale: "en_NG",
     url: siteConfig.url,
     siteName: "Doctium",
-    title: "Doctium — An AI-native hospital operating system for African healthcare",
+    title: "Doctium: An AI-native hospital operating system for African healthcare",
     description: siteConfig.shortDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Doctium — An AI-native hospital operating system for African healthcare",
+    title: "Doctium: An AI-native hospital operating system for African healthcare",
     description: siteConfig.shortDescription,
   },
   icons: {

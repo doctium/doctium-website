@@ -26,7 +26,7 @@ export function PersonalizedMedicine() {
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
                 Our personalized-medicine agents use structured patient data,
                 diagnostics and genetics to guide patient-specific decisions. We started
-                where personalization genuinely changes the treatment — sickle cell disease.
+                where personalization genuinely changes the treatment: sickle cell disease.
               </p>
             </Reveal>
           </div>
@@ -39,7 +39,7 @@ export function PersonalizedMedicine() {
               <p className="mt-3 text-balance text-lg leading-relaxed text-white/85">
                 Nigeria is the global epicenter of sickle cell disease. Genotype testing is
                 cheap and normalized, and hydroxyurea titration is genuinely{" "}
-                <span className="font-semibold text-white">n-of-1</span> — the same data that
+                <span className="font-semibold text-white">n-of-1</span>; the same data that
                 drives our telemedicine care also drives it inside the hospital EHR.
               </p>
             </div>

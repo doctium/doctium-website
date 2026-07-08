@@ -15,7 +15,7 @@ const doctorBenefits = [
   {
     icon: "CalendarHeart",
     title: "Bookings & schedule",
-    desc: "Accept consults over chat, voice and video on your own availability — no front desk required.",
+    desc: "Accept consults over chat, voice and video on your own availability, no front desk required.",
   },
   {
     icon: "Wallet",
@@ -25,7 +25,7 @@ const doctorBenefits = [
   {
     icon: "Network",
     title: "Specialist referrals",
-    desc: "Refer within the verified network when a case needs another specialty — and receive referrals back.",
+    desc: "Refer within the verified network when a case needs another specialty, and receive referrals back.",
   },
   {
     icon: "FileBarChart",

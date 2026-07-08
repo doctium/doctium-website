@@ -16,7 +16,7 @@ export function Features() {
               A full clinic, <span className="text-gradient-navy">in your pocket.</span>
             </>
           }
-          lede="Verified doctors, AI triage, secure consults, signed prescriptions and chronic-care programs — designed for the way patients in Nigeria actually live."
+          lede="Verified doctors, AI triage, secure consults, signed prescriptions and chronic-care programs, designed for the way patients in Nigeria actually live."
         />
 
         <RevealGroup

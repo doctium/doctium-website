@@ -40,7 +40,7 @@ export function ContactForm() {
     );
 
   const mailtoHref = useMemo(() => {
-    const subject = `Doctium enquiry — ${
+    const subject = `Doctium enquiry: ${
       selected.length ? selected.join(", ") : "General"
     }`;
     const body = [
@@ -112,7 +112,7 @@ export function ContactForm() {
           <Check className="h-7 w-7 text-success" />
         </div>
         <h3 className="mt-5 font-display text-2xl font-bold text-navy">
-          Thanks{name ? `, ${name.split(" ")[0]}` : ""} — message received.
+          Thanks{name ? `, ${name.split(" ")[0]}` : ""}, message received.
         </h3>
         <p className="mt-3 leading-relaxed text-muted">
           We&apos;ve logged your request{" "}
@@ -315,7 +315,7 @@ export function ContactForm() {
           </Button>
           <p className="flex items-start gap-1.5 text-[0.78rem] leading-snug text-muted sm:max-w-[16rem]">
             <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-trust" />
-            We reply from a real, clinician-led team — usually within two business days.
+            We reply from a real, clinician-led team, usually within two business days.
           </p>
         </div>
       </form>

@@ -17,7 +17,7 @@ export function EhrThesis() {
               <span className="text-gradient-navy">A system of intelligence.</span>
             </>
           }
-          lede="Legacy EHRs digitise paperwork and stop there. Doctium makes every workflow emit a clean, structured artifact — and those artifacts feed AI loops that make the hospital smarter with every encounter."
+          lede="Legacy EHRs digitise paperwork and stop there. Doctium makes every workflow emit a clean, structured artifact, and those artifacts feed AI loops that make the hospital smarter with every encounter."
         />
 
         <RevealGroup className="relative mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

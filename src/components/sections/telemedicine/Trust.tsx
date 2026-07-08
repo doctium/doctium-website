@@ -10,12 +10,12 @@ const trust = [
   {
     icon: BadgeCheck,
     title: "MDCN-verified doctors",
-    desc: "Every doctor passes identity and licence verification (MDCN KYC) before they can be booked. No anonymous advice — only accountable, registered clinicians.",
+    desc: "Every doctor passes identity and licence verification (MDCN KYC) before they can be booked. No anonymous advice: only accountable, registered clinicians.",
   },
   {
     icon: FileSignature,
     title: "Signed e-prescriptions",
-    desc: "Prescriptions are cryptographically signed with Ed25519 and carry a QR code that pharmacies can verify — tamper-evident from doctor to dispense.",
+    desc: "Prescriptions are cryptographically signed with Ed25519 and carry a QR code that pharmacies can verify, tamper-evident from doctor to dispense.",
   },
   {
     icon: Lock,
@@ -41,7 +41,7 @@ function VerifyCard() {
         </p>
         <p className="mt-2 text-balance text-[0.98rem] leading-relaxed text-white/80">
           Scan the QR on any Doctium prescription to confirm the issuing doctor, the
-          signature and that nothing has been altered — before a single tablet is dispensed.
+          signature and that nothing has been altered, before a single tablet is dispensed.
         </p>
       </div>
     </div>
@@ -62,7 +62,7 @@ export function Trust() {
               Real doctors. <span className="text-gradient">Real safeguards.</span>
             </>
           }
-          lede="Telemedicine only works if you can trust who is on the other end — and what happens to your data. Doctium is built so you can."
+          lede="Telemedicine only works if you can trust who is on the other end, and what happens to your data. Doctium is built so you can."
         />
 
         <RevealGroup className="mt-14 grid gap-5 sm:grid-cols-2" stagger={0.08}>

@@ -163,7 +163,7 @@ export function Hero() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-white/75"
           >
             Doctium turns every clinical, financial and operational workflow into
-            structured data that feeds intelligent AI loops — while a telemedicine
+            structured data that feeds intelligent AI loops, while a telemedicine
             marketplace connects patients to verified doctors in minutes.{" "}
             <span className="text-white/90">AI assists; licensed clinicians decide.</span>
           </motion.p>

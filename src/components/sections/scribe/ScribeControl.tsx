@@ -30,7 +30,7 @@ export function ScribeControl() {
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
                 Scribe is an assistant, not an author. Every AI-generated note must be reviewed,
                 edited and approved by the clinician before it enters the official patient record.
-                Provenance travels with the draft — so it&apos;s always clear what was captured,
+                Provenance travels with the draft, so it&apos;s always clear what was captured,
                 what the AI proposed, and what the doctor decided.
               </p>
             </Reveal>

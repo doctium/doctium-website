@@ -10,12 +10,12 @@ const safety = [
   {
     icon: "ShieldCheck",
     title: "Consent-gated capture",
-    desc: "Scribe only records or processes an encounter with explicit patient consent — consent is captured before anything else.",
+    desc: "Scribe only records or processes an encounter with explicit patient consent; consent is captured before anything else.",
   },
   {
     icon: "Lock",
     title: "Access-logged",
-    desc: "Every AI read of a recording is access-logged, so it's always auditable who — or what — touched a sensitive encounter.",
+    desc: "Every AI read of a recording is access-logged, so it's always auditable who, or what, touched a sensitive encounter.",
   },
   {
     icon: "FileSignature",

@@ -127,7 +127,7 @@ export function ScribeHero() {
           >
             Doctium Scribe is an ambient clinical documentation assistant built directly into
             the Doctium EHR. With patient consent, it turns the consultation into a structured,
-            reviewable draft note — so clinicians can focus fully on the patient, not the keyboard.{" "}
+            reviewable draft note, so clinicians can focus fully on the patient, not the keyboard.{" "}
             <span className="text-white/90">AI drafts; the clinician reviews, edits and approves.</span>
           </motion.p>
 

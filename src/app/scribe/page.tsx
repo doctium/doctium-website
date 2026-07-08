@@ -9,9 +9,9 @@ import { ScribeSafety } from "@/components/sections/scribe/ScribeSafety";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata = pageMeta({
-  title: "Doctium Scribe — AI clinical documentation",
+  title: "Doctium Scribe: AI clinical documentation",
   description:
-    "Doctium Scribe is an ambient clinical documentation assistant built into the Doctium EHR. With patient consent it turns consultations into structured, reviewable notes — reviewed, edited and approved by the clinician.",
+    "Doctium Scribe is an ambient clinical documentation assistant built into the Doctium EHR. With patient consent it turns consultations into structured, reviewable notes, reviewed, edited and approved by the clinician.",
   path: "/scribe",
 });
 
@@ -28,7 +28,7 @@ export default function ScribePage() {
       <CTASection
         eyebrow="Get started"
         title={<>See Doctium Scribe in your workflow.</>}
-        lede="Book a walkthrough and watch a consultation become a structured, doctor-approved note — inside the Doctium Hospital OS."
+        lede="Book a walkthrough and watch a consultation become a structured, doctor-approved note, inside the Doctium Hospital OS."
         primary={{ label: "Book a demo", href: "/contact" }}
         secondary={{ label: "Explore the Hospital OS", href: "/ehr" }}
       />

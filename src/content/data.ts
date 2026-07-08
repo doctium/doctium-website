@@ -26,7 +26,7 @@ export const artifactFlow = [
   {
     step: "02",
     title: "Produces a structured artifact",
-    desc: "Notes, orders, results, claims, vitals and ledgers — captured as clean, structured data, not free text trapped in PDFs.",
+    desc: "Notes, orders, results, claims, vitals and ledgers, captured as clean, structured data, not free text trapped in PDFs.",
   },
   {
     step: "03",
@@ -36,7 +36,7 @@ export const artifactFlow = [
   {
     step: "04",
     title: "Improves the outcome",
-    desc: "Better care quality, lighter documentation, less revenue leakage, faster operations — and readiness for personalized medicine.",
+    desc: "Better care quality, lighter documentation, less revenue leakage, faster operations, and readiness for personalized medicine.",
   },
 ];
 
@@ -48,7 +48,7 @@ export const closedLoops: Item[] = [
   {
     icon: "HeartPulse",
     title: "Care quality",
-    desc: "Structured clinical artifacts power risk detection, care-gap alerts and guideline nudges — surfaced to the clinician, never acting alone.",
+    desc: "Structured clinical artifacts power risk detection, care-gap alerts and guideline nudges, surfaced to the clinician, never acting alone.",
     tag: "Clinical",
   },
   {
@@ -60,13 +60,13 @@ export const closedLoops: Item[] = [
   {
     icon: "Wallet",
     title: "Revenue integrity",
-    desc: "Every encounter emits billing artifacts — invoices, receipts, estimates, claims and ledgers — closing the gaps where revenue leaks.",
+    desc: "Every encounter emits billing artifacts, invoices, receipts, estimates, claims and ledgers, closing the gaps where revenue leaks.",
     tag: "Financial",
   },
   {
     icon: "Gauge",
     title: "Operational speed",
-    desc: "Routing, queues, ward and bed state, lab and imaging turnaround — monitored continuously so bottlenecks surface early.",
+    desc: "Routing, queues, ward and bed state, lab and imaging turnaround, monitored continuously so bottlenecks surface early.",
     tag: "Operational",
   },
 ];
@@ -127,10 +127,10 @@ export const scribeOutcomes = [
 /* ------------------------------------------------------------------ */
 
 export const scdFeatures: Item[] = [
-  { icon: "Dna", title: "Genotype-aware protocols", desc: "Care thresholds adapt to SS, SC and AS genotypes — personalization that changes the clinical decision." },
-  { icon: "Brain", title: "Explainable risk engine", desc: "Every risk score breaks down into named, weighted factors — including live local weather — so clinicians can see the why." },
+  { icon: "Dna", title: "Genotype-aware protocols", desc: "Care thresholds adapt to SS, SC and AS genotypes: personalization that changes the clinical decision." },
+  { icon: "Brain", title: "Explainable risk engine", desc: "Every risk score breaks down into named, weighted factors, including live local weather, so clinicians can see the why." },
   { icon: "NotebookPen", title: "Crisis diary", desc: "Patients log pain, sites, triggers and hospitalizations; clinicians get the trend, not just the moment." },
-  { icon: "TestTube", title: "Hydroxyurea titration", desc: "Dose-response tracking with CBC safety flags — hold-dose guidance to the doctor, never self-dosing for the patient." },
+  { icon: "TestTube", title: "Hydroxyurea titration", desc: "Dose-response tracking with CBC safety flags, hold-dose guidance to the doctor, never self-dosing for the patient." },
   { icon: "Bot", title: "Daily care agent", desc: "A monitoring agent nudges patients and escalates to the care team when risk rises." },
   { icon: "FileBarChart", title: "Outcomes & research data", desc: "Admin outcomes dashboards plus anonymized, reference-only data for research and pilots." },
 ];
@@ -141,11 +141,11 @@ export const scdFeatures: Item[] = [
 
 export const telemedFeatures: Item[] = [
   { icon: "BadgeCheck", title: "Verified doctors", desc: "Every doctor is identity- and licence-verified (MDCN KYC) before they are bookable." },
-  { icon: "Bot", title: "Leenah — AI triage", desc: "A safety-first AI symptom checker with red-flag detection, in five languages, that routes patients to the right care." },
-  { icon: "Video", title: "Secure chat, voice & video", desc: "Consult from anywhere — text, voice notes and encrypted video calls." },
+  { icon: "Bot", title: "Leenah, AI triage", desc: "A safety-first AI symptom checker with red-flag detection, in seven languages, that routes patients to the right care." },
+  { icon: "Video", title: "Secure chat, voice & video", desc: "Consult from anywhere: text, voice notes and encrypted video calls." },
   { icon: "FileSignature", title: "Digital prescriptions", desc: "Cryptographically signed e-prescriptions with QR verification and pharmacy hand-off." },
   { icon: "CalendarHeart", title: "Chronic care programs", desc: "Enrolment, vitals logging, threshold alerts, goals and adherence for long-term conditions." },
-  { icon: "Languages", title: "Built multilingual", desc: "English, Nigerian Pidgin, Hausa, Yoruba and Igbo across the patient experience." },
+  { icon: "Languages", title: "Built multilingual", desc: "English, Nigerian Pidgin, Hausa, Yoruba, Igbo, French and Arabic across the patient experience." },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -154,7 +154,7 @@ export const telemedFeatures: Item[] = [
 
 export const trustPoints: Item[] = [
   { icon: "UserCheck", title: "Doctor-in-the-loop", desc: "AI assists, recommends, summarizes, routes and monitors. Licensed humans remain responsible for every final clinical and financial decision." },
-  { icon: "FileJson", title: "FHIR R4 interoperable", desc: "Patient records export as standards-based FHIR R4 bundles — built to connect, not to lock in." },
+  { icon: "FileJson", title: "FHIR R4 interoperable", desc: "Patient records export as standards-based FHIR R4 bundles, built to connect, not to lock in." },
   { icon: "ShieldCheck", title: "Consent & audit by design", desc: "Recording is consent-gated; every sensitive action is audit-logged; clinical data access is scoped." },
   { icon: "Lock", title: "Hardened & private", desc: "Fail-closed secrets, rate-limited auth, encrypted records and least-privilege role-based access control." },
 ];
@@ -164,9 +164,9 @@ export const trustPoints: Item[] = [
 /* ------------------------------------------------------------------ */
 
 export const africaPoints: Item[] = [
-  { icon: "MapPin", title: "Nigeria-first", desc: "Designed around how Nigerian hospitals, doctors and patients actually work — then built to scale across the continent." },
-  { icon: "Languages", title: "Multilingual", desc: "Five languages today, with a localization framework ready for more." },
-  { icon: "Banknote", title: "Local payments", desc: "Naira-precise to the kobo, with Paystack, wallets and escrow — multi-currency ready." },
+  { icon: "MapPin", title: "Nigeria-first", desc: "Designed around how Nigerian hospitals, doctors and patients actually work, then built to scale across the continent." },
+  { icon: "Languages", title: "Multilingual", desc: "Seven languages today, with a localization framework ready for more." },
+  { icon: "Banknote", title: "Local payments", desc: "Naira-precise to the kobo, with Paystack, wallets and escrow, multi-currency ready." },
   { icon: "Wifi", title: "Network-aware", desc: "Tuned for real mobile networks and devices, not just fast-office Wi-Fi." },
 ];
 

@@ -14,7 +14,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata = pageMeta({
   title: "Blog",
   description:
-    "Doctium insights on AI-native healthcare, telemedicine and hospital operations across Africa — from the team building the operating system for African hospitals.",
+    "Doctium insights on AI-native healthcare, telemedicine and hospital operations across Africa, from the team building the operating system for African hospitals.",
   path: "/blog",
 });
 
@@ -215,7 +215,7 @@ export default async function BlogIndexPage({
             </Reveal>
             <Reveal delay={0.14}>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
-                Field notes from the team building the operating system for African hospitals —
+                Field notes from the team building the operating system for African hospitals,
                 on telemedicine, clinical AI, hospital operations and the future of care across
                 the continent.
               </p>

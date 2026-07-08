@@ -11,7 +11,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata = pageMeta({
   title: "Personalized Medicine",
   description:
-    "Doctium's personalized-medicine agents use structured patient data, diagnostics and genetics to guide patient-specific decisions — starting with sickle cell disease, where personalization genuinely changes the treatment.",
+    "Doctium's personalized-medicine agents use structured patient data, diagnostics and genetics to guide patient-specific decisions, starting with sickle cell disease, where personalization genuinely changes the treatment.",
   path: "/personalized-medicine",
 });
 
@@ -28,7 +28,7 @@ export default function PersonalizedMedicinePage() {
       <CTASection
         eyebrow="Get started"
         title={<>Personalized medicine, built on structured data.</>}
-        lede="See the explainable risk engine, hydroxyurea titration and the daily care agent in a live walkthrough — built for your hospital and your patients."
+        lede="See the explainable risk engine, hydroxyurea titration and the daily care agent in a live walkthrough, built for your hospital and your patients."
         primary={{ label: "Book a demo", href: "/contact" }}
         secondary={{ label: "See the Hospital OS", href: "/ehr" }}
       />

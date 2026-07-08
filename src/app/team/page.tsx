@@ -17,7 +17,7 @@ import { getTeamMembers } from "@/lib/cms";
 export const metadata = pageMeta({
   title: "Team",
   description:
-    "Meet the team building Doctium — an AI-native hospital operating system for African healthcare. Clinician-led, built for Africa, doctor-in-the-loop.",
+    "Meet the team building Doctium, an AI-native hospital operating system for African healthcare. Clinician-led, built for Africa, doctor-in-the-loop.",
   path: "/team",
 });
 
@@ -36,7 +36,7 @@ export default async function TeamPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
             A clinician-led team of engineers, designers and doctors rebuilding how African
-            hospitals run — and how patients reach care. We&apos;re small, focused, and hiring.
+            hospitals run, and how patients reach care. We&apos;re small, focused, and hiring.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button href="/careers" variant="white" size="lg" magnetic iconRight={<ArrowRight className="h-4 w-4" />}>
@@ -119,7 +119,7 @@ export default async function TeamPage() {
             <Reveal>
               <div className="mt-12 rounded-3xl border border-dashed border-line bg-canvas px-6 py-14 text-center">
                 <p className="mx-auto max-w-xl text-balance text-lg text-muted">
-                  We&apos;re putting faces to the names. Team profiles are coming soon —
+                  We&apos;re putting faces to the names. Team profiles are coming soon,
                   in the meantime, the fastest way to meet us is to{" "}
                   <Link href="/careers" className="link-underline font-semibold text-navy">
                     join us

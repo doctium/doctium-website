@@ -11,7 +11,7 @@ const teasers = [
     icon: Mic,
     eyebrow: "Doctium Scribe",
     title: "Ambient clinical documentation.",
-    desc: "With patient consent, Scribe captures the consultation and drafts a structured, reviewable note — history, exam, assessment, plan, orders and billing cues. The clinician reviews and approves before anything enters the record.",
+    desc: "With patient consent, Scribe captures the consultation and drafts a structured, reviewable note: history, exam, assessment, plan, orders and billing cues. The clinician reviews and approves before anything enters the record.",
     href: "/scribe",
     cta: "How Doctium Scribe works",
   },
@@ -19,7 +19,7 @@ const teasers = [
     icon: Dna,
     eyebrow: "Personalized Medicine",
     title: "Care that adapts to the individual.",
-    desc: "Genotype-aware protocols, an explainable risk engine and a daily care agent — starting with sickle cell disease, where personalization genuinely changes the treatment. The same structured record makes it possible.",
+    desc: "Genotype-aware protocols, an explainable risk engine and a daily care agent, starting with sickle cell disease, where personalization genuinely changes the treatment. The same structured record makes it possible.",
     href: "/personalized-medicine",
     cta: "Explore personalized medicine",
   },
@@ -40,7 +40,7 @@ export function EhrAiBuiltIn() {
               <span className="text-gradient">It lives in the record.</span>
             </>
           }
-          lede="Two flagship AI workflows run on the OS today — ambient documentation and personalized medicine — both designed doctor-in-the-loop from the first line of code."
+          lede="Two flagship AI workflows run on the OS today, ambient documentation and personalized medicine, both designed doctor-in-the-loop from the first line of code."
         />
 
         <RevealGroup className="mt-14 grid gap-6 md:grid-cols-2" stagger={0.12}>

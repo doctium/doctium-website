@@ -8,7 +8,7 @@ const billing = {
   icon: Wallet,
   eyebrow: "Billing & Revenue",
   title: "Revenue stops leaking.",
-  body: "Every encounter emits billing artifacts the moment it happens — so the finance office sees what was actually delivered, not a guess at month-end.",
+  body: "Every encounter emits billing artifacts the moment it happens, so the finance office sees what was actually delivered, not a guess at month-end.",
   points: [
     "Invoices, receipts and estimates from each encounter",
     "Patient wallets & prepayment for cash and deposits",
@@ -21,7 +21,7 @@ const insurance = {
   icon: ShieldCheck,
   eyebrow: "Insurance / HMO / NHIA",
   title: "Claims that close cleanly.",
-  body: "Capitation, claims and returns are first-class — built around how Nigerian HMOs and the NHIA actually operate, with awareness at the point of service.",
+  body: "Capitation, claims and returns are first-class, built around how Nigerian HMOs and the NHIA actually operate, with awareness at the point of service.",
   points: [
     "Capitation management and member rosters",
     "Claim batches with end-to-end tracking",
@@ -81,7 +81,7 @@ export function EhrFinance() {
               <span className="text-gradient-navy">already live.</span>
             </>
           }
-          lede="Billing & Revenue and Insurance / HMO / NHIA are the most complete modules in the OS — because a hospital that can't bill cleanly can't run, no matter how good the clinical software is."
+          lede="Billing & Revenue and Insurance / HMO / NHIA are the most complete modules in the OS, because a hospital that can't bill cleanly can't run, no matter how good the clinical software is."
         />
 
         <RevealGroup className="mt-14 grid gap-6 lg:grid-cols-2" stagger={0.12}>
@@ -98,7 +98,7 @@ export function EhrFinance() {
             <TrendingUp className="h-5 w-5 shrink-0 text-trust-deep" />
             <p className="text-balance text-[0.95rem] leading-relaxed text-navy">
               <span className="font-semibold">Because billing is an artifact, not an afterthought,</span>{" "}
-              revenue integrity becomes a closed loop — every service rendered is a service that can be billed.
+              revenue integrity becomes a closed loop; every service rendered is a service that can be billed.
             </p>
           </div>
         </Reveal>

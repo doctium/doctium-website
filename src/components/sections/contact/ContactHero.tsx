@@ -70,7 +70,7 @@ function DemoCard() {
       </div>
       <div className="mt-3 flex items-center gap-2 border-t border-white/10 pt-3 text-[0.7rem] text-white/65">
         <MessageSquare className="h-3.5 w-3.5 text-sky" />
-        A real human replies — not a bot.
+        A real human replies, not a bot.
       </div>
     </div>
   );
@@ -128,8 +128,8 @@ export function ContactHero() {
             transition={{ duration: 0.9, delay: 0.18, ease: EASE_OUT }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-white/75"
           >
-            Hospitals — book a walkthrough of the Hospital OS and Doctium Scribe.
-            Patients — get the app and reach support. Tell us a little about you and
+            Hospitals: book a walkthrough of the Hospital OS and Doctium Scribe.
+            Patients: get the app and reach support. Tell us a little about you and
             we&apos;ll come back with the right person.{" "}
             <span className="text-white/90">A real clinician-led team replies.</span>
           </motion.p>

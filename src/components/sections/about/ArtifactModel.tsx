@@ -18,7 +18,7 @@ export function ArtifactModel() {
               <span className="text-gradient-navy">Intelligent loops</span> out.
             </>
           }
-          lede="The whole platform runs on one idea: turn every workflow into clean, structured data — then let AI assist against it, while licensed humans decide."
+          lede="The whole platform runs on one idea: turn every workflow into clean, structured data, then let AI assist against it, while licensed humans decide."
         />
 
         {/* The 4-step flow */}

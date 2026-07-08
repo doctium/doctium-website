@@ -141,7 +141,7 @@ export function DoctorSignupForm() {
   if (step === "done") {
     return (
       <DownloadPanel
-        heading="Application received — welcome aboard."
+        heading="Application received, welcome aboard."
         subtitle="Your doctor account has been created and is now with our team for review. New registrations are verified before you go live."
         next="Download the Doctium Doctor app and sign in with your email to upload your verification documents (practising licence, ID) and complete review."
       />

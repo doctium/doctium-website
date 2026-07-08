@@ -156,7 +156,7 @@ export function ApplyForm({ slug, title }: { slug: string; title: string }) {
         </div>
         <h3 className="mt-5 text-2xl font-bold text-navy">Application received</h3>
         <p className="mx-auto mt-3 max-w-md text-lg leading-relaxed text-muted">
-          Thanks — we read every application and reply within 2 weeks.
+          Thanks, we read every application and reply within 2 weeks.
         </p>
         <p className="mt-4 text-sm text-muted">
           You applied for <span className="font-semibold text-navy">{title}</span>.
@@ -295,7 +295,7 @@ export function ApplyForm({ slug, title }: { slug: string; title: string }) {
             name="coverNote"
             rows={5}
             className={cn(inputClass, "resize-y")}
-            placeholder="Anything you'd like us to know — why this role, what you'd bring."
+            placeholder="Anything you'd like us to know: why this role, what you'd bring."
           />
         </Field>
       </div>
