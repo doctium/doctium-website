@@ -130,6 +130,9 @@ export function Footer() {
             <Link href="/terms" className="hover:text-white">
               Terms
             </Link>
+            <a href={`tel:${siteConfig.links.phone}`} className="hover:text-white">
+              {siteConfig.links.phoneDisplay}
+            </a>
             <a href={`mailto:${siteConfig.links.email}`} className="hover:text-white">
               {siteConfig.links.email}
             </a>

@@ -17,18 +17,19 @@ export const siteConfig = {
     playStore: "https://play.google.com/store/apps",
     demo: "/contact",
     email: "hello@doctiumhealth.com",
+    phone: "+2348133386966", // tel: target (E.164)
+    phoneDisplay: "+234 813 338 6966",
   },
   // Handle is @doctiumhealth / /doctiumhealth across platforms.
-  // NOTE: whatsapp needs the real click-to-chat number or channel invite link.
   social: {
     facebook: "https://facebook.com/doctiumhealth",
     instagram: "https://instagram.com/doctiumhealth",
     x: "https://x.com/doctiumhealth",
     tiktok: "https://tiktok.com/@doctiumhealth",
     threads: "https://threads.net/@doctiumhealth",
-    linkedin: "https://linkedin.com/company/doctiumhealth",
+    linkedin: "https://linkedin.com/company/doctium-health",
     youtube: "https://youtube.com/@doctiumhealth",
-    whatsapp: "https://wa.me/", // TODO: replace with the real WhatsApp number/channel
+    whatsapp: "https://wa.me/2348133386966",
   },
   address: {
     street: "D12, DPlaza, Sokoto Road",

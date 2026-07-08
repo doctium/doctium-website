@@ -66,6 +66,7 @@ export const organizationJsonLd = {
   description: siteConfig.shortDescription,
   slogan: siteConfig.slogan,
   email: siteConfig.links.email,
+  telephone: siteConfig.links.phone,
   address: {
     "@type": "PostalAddress",
     streetAddress: siteConfig.address.street,

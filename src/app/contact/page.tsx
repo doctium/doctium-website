@@ -1,6 +1,6 @@
 import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
-import { Mail, UserPlus, Smartphone, MapPin, ArrowUpRight, ShieldCheck, Globe } from "lucide-react";
+import { Mail, Phone, UserPlus, Smartphone, MapPin, ArrowUpRight, ShieldCheck, Globe } from "lucide-react";
 import { ContactHero } from "@/components/sections/contact/ContactHero";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 import { Section } from "@/components/ui/Section";
@@ -25,6 +25,13 @@ const reachLinks = [
     value: siteConfig.links.email,
     href: `mailto:${siteConfig.links.email}`,
     note: "Hospitals & patients — a real human replies.",
+  },
+  {
+    icon: Phone,
+    label: "Call us",
+    value: siteConfig.links.phoneDisplay,
+    href: `tel:${siteConfig.links.phone}`,
+    note: "Speak with our team during working hours.",
   },
   {
     icon: UserPlus,
